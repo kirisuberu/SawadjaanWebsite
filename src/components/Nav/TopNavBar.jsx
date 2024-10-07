@@ -1,36 +1,29 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-import logo from "../../assets/img/sampleLogo.png";
-
+import mainLogo from "../../assets/img/company/mainLogoOnly.png";
+import companyName from "../../assets/img/company/mainNameOnly.png";
 export default function NavBar() {
   return (
     <NavContainer>
       <Logo>
-        <img src={logo} alt="Logo" />
+        <MainLogo src={mainLogo} alt="Logo" />
+        <CompanyName src={companyName} alt=" NameLogo" />
       </Logo>
-      <NavLinks>
+      <NavLinks className="oswaldDB">
         <li className="dropdown">
           <Dropdown>
             <DropdownToggle>ABOUT US</DropdownToggle>
             <DropdownMenu className="shadow">
               <DropDownList>
-                <a href="#">Our Company</a>
-              </DropDownList>
-              <DropDownList>
-                <a href="#">Our Story</a>
+                <Link to="#">Our Story</Link>
               </DropDownList>
               <DropDownList>
                 <a href="#">Vision & Mission</a>
               </DropDownList>
               <DropDownList>
-                <a href="#">Our Core Values</a>
-              </DropDownList>
-              <DropDownList>
-                <a href="#">Our Commitment</a>
-              </DropDownList>
-              <DropDownList>
-                <a href="#">Our Subsidiaries</a>
+                <a href="#">Goals & Objectives</a>
               </DropDownList>
             </DropdownMenu>
           </Dropdown>
@@ -101,9 +94,6 @@ const NavLink = styled.li`
 `;
 const Logo = styled.div`
   margin-right: 20px;
-  img {
-    height: 35px;
-  }
 `;
 
 const NavLinks = styled.ul`
@@ -111,20 +101,24 @@ const NavLinks = styled.ul`
   margin: 0 2rem 0 0;
   padding: 0;
   display: flex;
+  
   li {
-    margin-right: 20px;
+    margin-right: 30px;
     position: relative;
   }
   a {
     color: #111;
     text-decoration: none;
     transition: color 0.2s ease;
+    
+    }
     &:hover {
-      color: #d00;
+      color: #00674f;
+      
     }
   }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1220px) {
     transform: translateX(200%);
     transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
     
@@ -133,7 +127,8 @@ const NavLinks = styled.ul`
 const DropdownToggle = styled.a`
   cursor: pointer;
   position: relative;
-  padding-right: 1.5rem;
+  padding-right: 1rem;
+
   &::after {
     content: ""; // arrow down symbol
     position: absolute;
@@ -162,14 +157,14 @@ const DropdownMenu = styled.ul`
   border: no-border;
   display: none;
   li {
-    font-size: 70%;
+    font-size: 90%;
     margin-bottom: 5px;
   }
   a {
     color: #111;
     text-decoration: none;
     &:hover {
-      color: #d00;
+      color: #00674f;
     }
   }
 `;
@@ -183,4 +178,15 @@ const Dropdown = styled.li`
 `;
 const DropDownList = styled.li`
   width: 100%;
+`;
+
+const MainLogo = styled.img`
+  height: 45px;
+`;
+
+const CompanyName = styled.img`
+  height: 35px;
+  @media (max-width: 1220px) {
+    display: none;
+  }
 `;

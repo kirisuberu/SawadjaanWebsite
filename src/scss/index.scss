@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../assets/fonts/Oswald-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.oswaldDB {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+
 .NavBar {
   background-color: #333;
   color: #fff;
@@ -64,7 +76,7 @@
   will-change: filter;
   transition: filter 300ms;
   :hover {
-    filter: drop-shadow(0 0 2em #0b16e7be);
+    filter: drop-shadow(0 0 2em #00674fc8);
   }
 }
 
@@ -149,4 +161,25 @@
   .HamburgerButton span:nth-child(3) {
     width: 10px;
   }
+}
+/*Image Slider Dots*/
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
 }

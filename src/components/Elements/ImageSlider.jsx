@@ -91,6 +91,7 @@ const ImageSlider = () => {
           <div
             key={index}
             className="slider-slide"
+            onClick={() => setCurrentIndex(index)}
             style={{
               width: `${100 / images.length}%`, // add a width to the slider slide
               height: "500px", // add a height to the slider slide

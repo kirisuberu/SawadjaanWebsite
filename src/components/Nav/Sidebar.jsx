@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -78,18 +77,23 @@ const HamburgerButton = styled.button`
 `;
 
 const SidebarContent = styled.div`
+  border-radius: 1rem;
   position: fixed;
   top: 0;
   right: 0;
   width: 250px;
   height: 350px;
-  background-color: #333;
-  color: #fff;
+  background-color: #eee;
+  color: #19191a;
   padding: 20px;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
   visibility: hidden;
-
+  will-change: filter;
+  transition: filter 300ms;
+  :hover {
+    filter: drop-shadow(0 0 2em #00674fc8);
+  }
   &.open {
     visibility: visible;
     transform: translateX(0);
@@ -109,12 +113,11 @@ const NavLink = styled.div`
   font-size: 110%;
   margin-bottom: 15px;
   a {
-    color: #fff;
-    font-family: "Lexend Light", sans-serif;
+    color: #19191a;
     text-decoration: none;
     transition: color 0.2s ease;
   }
   a:hover {
-    color: red;
+    color: #efbf04;
   }
 `;
