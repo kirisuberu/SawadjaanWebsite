@@ -3,10 +3,10 @@ import styled from "styled-components";
 import TopNavBar from "../components/Nav/TopNavBar";
 import SideBar from "../components/Nav/Sidebar";
 import ContactForm from "../components/Elements/ContactForm";
-export default function Contact() {
+export default function Team() {
   return (
-    <Wrapper id="contact">
-      <Title>Contact Us</Title>
+    <Wrapper id="team">
+      <Title>Team</Title>
       <TopNavBar />
       <SideBar />
       <ContactForm />

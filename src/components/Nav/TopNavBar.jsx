@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import mainLogo from "../../assets/img/company/mainLogoOnly.png";
 import companyName from "../../assets/img/company/mainNameOnly.png";
-export default function NavBar() {
+export default function TopNavBar() {
   return (
     <NavContainer>
       <Logo>
@@ -61,10 +61,10 @@ export default function NavBar() {
           <DropdownToggle>CONTACT US</DropdownToggle>
           <DropdownMenu className="shadow">
             <DropDownList>
-              <a href="#">Inquire Now!</a>
+              <Link to="/contact">Inquire Now!</Link>
             </DropDownList>
             <DropDownList>
-              <a href="#">Working with Us</a>
+              <Link to="/contact">Working with Us</Link>
             </DropDownList>
           </DropdownMenu>
         </Dropdown>
@@ -121,7 +121,7 @@ const NavLinks = styled.ul`
     @media (max-width: 1220px) {
     transform: translateX(200%);
     transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    
+    }
 `;
 
 const DropdownToggle = styled.a`

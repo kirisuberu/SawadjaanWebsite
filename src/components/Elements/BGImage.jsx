@@ -31,7 +31,7 @@ export default function BGImage({ title, image, caption, filterColor }) {
       {" "}
       {/* filter */}
       <MainContent>
-        <Title>{title}</Title>
+        <Title className="VMGO-title">{title}</Title>
         <ParagraphHolder>
           <MultiParagraphProcessor caption={caption} />
         </ParagraphHolder>
