@@ -60,7 +60,7 @@ const BulletContainer = styled.div`
     font-family: "Poppins", sans-serif;
     &::before {
       content: "•";
-      color: #00674f;
+      color: #19191a;
       display: inline-block;
       font-size: 2rem;
       width: 1em;
@@ -73,7 +73,7 @@ const TitleHolder = styled.div`
   width: 100vw;
   margin-top: 3rem;
   margin-left: -5rem;
-  background-color: #00674f;
+  background-color: #19191a;
   color: white;
   padding: 1rem 0;
   h1 {

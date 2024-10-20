@@ -52,13 +52,13 @@ const CloseButton = styled.button`
   top: 10px;
   right: 10px;
   background-color: transparent;
-  color: #00674f;
+  color: black;
   border: none;
   padding: 10px;
   cursor: pointer;
   :hover {
     color: white;
-    background-color: #00674f;
+    background-color: black;
   }
 `;
 const HamburgerButton = styled.button`
@@ -98,7 +98,7 @@ const SidebarContent = styled.div`
   will-change: filter;
   transition: filter 300ms;
   :hover {
-    filter: drop-shadow(0 0 2em #00674fc8);
+    filter: drop-shadow(0 0 2em #000000c8);
   }
   &.open {
     visibility: visible;

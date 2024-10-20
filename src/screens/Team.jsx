@@ -62,7 +62,7 @@ As he continues to explore new opportunities in the field, Rhensivar remains com
 `;
   return (
     <Wrapper id="team">
-      <Title>Executive Team</Title>
+      <Title>EXECUTIVE TEAM</Title>
       <TopNavBar />
       <SideBar />
       <SuperTeam>
@@ -162,7 +162,7 @@ const Title = styled.h1`
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   letter-spacing: 0.5rem;
-  color: #00674f;
+  color: #19191a;
   text-align: center;
   margin-top: 3rem;
   font-size: 4rem;
@@ -178,6 +178,6 @@ const SuperTeam = styled.div``;
 const LineDiv = styled.div`
   height: 3px;
   width: 100vw;
-  background-color: #00674f;
+  background-color: #19191a;
   margin: 20px 0;
 `;

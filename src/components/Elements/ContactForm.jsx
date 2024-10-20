@@ -50,8 +50,8 @@ const Form = styled.form`
   input {
     border-radius: 1rem;
   }
-  -webkit-box-shadow: 1px 0px 21px 0px #006747;
-  box-shadow: 1px 0px 21px 0px #006747;
+  -webkit-box-shadow: 1px 0px 21px 0px ##19191a;
+  box-shadow: 1px 0px 21px 0px ##19191a;
 `;
 const TextInput = styled.input`
   width: 100%;
@@ -84,7 +84,7 @@ const Submit = styled.input`
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  background-color: #00674f;
+  background-color: ##19191a;
   color: #eee;
   border: none;
   cursor: pointer;

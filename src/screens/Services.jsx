@@ -136,7 +136,7 @@ const Title = styled.div`
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   letter-spacing: 0.5rem;
-  color: #00674f;
+  color: #19191a;
   text-align: center;
   margin-top: 3rem;
   padding-top: 3rem;
@@ -167,7 +167,7 @@ const ServiceIntro = styled.div`
   justify-content: center;
   align-items: center;
   h2 {
-    color: #00674f;
+    color: #19191a;
     font-family: "Poppins", sans-serif;
     font-size: 2rem;
     line-height: 1.5;
@@ -187,7 +187,7 @@ const ServiceBottom = styled.div`
   justify-content: left;
   align-items: left;
   h2 {
-    color: #00674f;
+    color: #19191a;
     font-family: "Poppins", sans-serif;
     font-size: 2rem;
     font-weight: 700;
@@ -203,14 +203,14 @@ const ServiceBottom = styled.div`
     font-family: "Poppins", sans-serif;
     &::before {
       content: "•";
-      color: #00674f;
+      color: #19191a;
       display: inline-block;
       font-size: 2rem;
       width: 1em;
       margin-left: -1em;
     }
     span {
-      color: #00674f;
+      color: #19191a;
       font-weight: 700;
     }
   }

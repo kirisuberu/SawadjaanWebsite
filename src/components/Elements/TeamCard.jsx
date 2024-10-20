@@ -140,7 +140,7 @@ const TeamClose = styled.button`
   border-bottom-right-radius: 0;
   border-top-left-radius: 0;
   &:hover {
-    background-color: #00674f;
+    background-color: #19191a;
   }
 `;
 const FullCardHolder = styled.div`
@@ -165,8 +165,8 @@ const FullCard = styled.div`
   align-items: center;
   background-color: rgba(
     0,
-    100,
-    79,
+    0,
+    0,
     0.9
   ); /* Semi-transparent emerald background */
   color: white;
@@ -218,6 +218,6 @@ const SeeMore = styled.button`
   border-top-left-radius: 1rem;
   width: 80px;
   &:hover {
-    background-color: #00674f;
+    background-color: #19191a;
   }
 `;

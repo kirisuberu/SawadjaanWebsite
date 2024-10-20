@@ -6,7 +6,7 @@ import ContactForm from "../components/Elements/ContactForm";
 export default function Contact() {
   return (
     <Wrapper id="contact">
-      <Title>Contact Us</Title>
+      <Title>CONTACT US</Title>
       <TopNavBar />
       <SideBar />
       <ContactForm />
@@ -21,7 +21,7 @@ const Title = styled.h1`
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   letter-spacing: 0.5rem;
-  color: #00674f;
+  color: black;
   text-align: center;
   margin-top: 3rem;
   font-size: 4rem;
