@@ -55,11 +55,18 @@ const Wrapper = styled.div`
     background-color: ${(props) => props.filterColor};
     opacity: 0.7;
   }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const ParagraphHolder = styled.div`
   margin: 1rem;
   padding-left: 7rem;
   padding-right: 7rem;
+  @media (max-width: 768px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   p {
     font-size: 1.4rem;
   }
@@ -72,6 +79,9 @@ const Title = styled.div`
   font-size: 4rem;
   font-weight: 600;
   color: #000000;
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
 `;
 const MainContent = styled.div`
   display: flex;

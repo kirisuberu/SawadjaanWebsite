@@ -6,13 +6,13 @@ export default function ImageLeft({ title, image, imgAlt, caption, bgColor }) {
   const MultiParagraphProcessor = ({ caption }) => {
     const paragraphs = caption.split("\n"); // split the caption into an array of paragraphs
     return (
-      <div style={{ margin: "2rem" }}>
+      <ParagraphProcessor style={{ margin: "2rem" }}>
         {paragraphs.map((paragraph, index) => (
           <p style={{ textIndent: "2rem", textAlign: "justify" }} key={index}>
             {paragraph}
           </p>
         ))}
-      </div>
+      </ParagraphProcessor>
     );
   };
   return (
@@ -41,15 +41,25 @@ const Title = styled.div`
   font-family: Helvetica, sans serif;
   font-size: 4rem;
   font-weight: 600;
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
 `;
 const MainContent = styled.div`
   display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 const LeftSide = styled.div`
   padding: 2rem;
   width: 40%;
   display: inline;
   min-height: 600px;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 1rem;
+  }
 `;
 const ImageHolder = styled.img`
   width: 100%;
@@ -60,4 +70,18 @@ const RightSide = styled.div`
   width: 60%;
   font-size: 1.3rem;
   display: inline;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 1rem;
+  }
+`;
+const ParagraphProcessor = styled.div`
+  p {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 768px) {
+    p {
+      font-size: 1rem;
+    }
+  }
 `;

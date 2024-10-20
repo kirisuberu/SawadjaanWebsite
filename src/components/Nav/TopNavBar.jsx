@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
 import mainLogo from "../../assets/img/company/mainLogoOnly.png";
 import companyName from "../../assets/img/company/mainNameOnly.png";
 export default function TopNavBar() {
@@ -17,19 +16,19 @@ export default function TopNavBar() {
             <DropdownToggle>ABOUT US</DropdownToggle>
             <DropdownMenu className="shadow">
               <DropDownList>
-                <Link to="#">Our Story</Link>
+                <Link to="/">Our Story</Link>
               </DropDownList>
               <DropDownList>
-                <a href="#">Vision & Mission</a>
+                <Link to="/">Vision & Mission</Link>
               </DropDownList>
               <DropDownList>
-                <a href="#">Goals & Objectives</a>
+                <Link to="/">Goals & Objectives</Link>
               </DropDownList>
             </DropdownMenu>
           </Dropdown>
         </li>
         <NavLink>
-          <a href="#">OUR TEAM</a>
+          <Link to="/team">OUR TEAM</Link>
         </NavLink>
         <Dropdown>
           <DropdownToggle>ABOUT WORK</DropdownToggle>
@@ -52,10 +51,10 @@ export default function TopNavBar() {
           </DropdownMenu>
         </Dropdown>
         <NavLink>
-          <a href="#">OUR SERVICES</a>
+          <Link to="/services">OUR SERVICES</Link>
         </NavLink>
         <NavLink>
-          <a href="#">OUR FOUNDATION</a>
+          <a href="#">OUR PROJECTS</a>
         </NavLink>
         <Dropdown>
           <DropdownToggle>CONTACT US</DropdownToggle>
@@ -101,7 +100,7 @@ const NavLinks = styled.ul`
   margin: 0 2rem 0 0;
   padding: 0;
   display: flex;
-  
+
   li {
     margin-right: 30px;
     position: relative;
@@ -110,18 +109,15 @@ const NavLinks = styled.ul`
     color: #111;
     text-decoration: none;
     transition: color 0.2s ease;
-    
-    }
-    &:hover {
-      color: #00674f;
-      
-    }
+  }
+  &:hover {
+    color: #00674f;
   }
 
-    @media (max-width: 1220px) {
+  @media (max-width: 1220px) {
     transform: translateX(200%);
     transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    }
+  }
 `;
 
 const DropdownToggle = styled.a`

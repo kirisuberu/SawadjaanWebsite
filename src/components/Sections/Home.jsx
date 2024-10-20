@@ -38,7 +38,7 @@ As we continue to grow, our company remains grounded in humility and service. Ev
             caption={StoryContent}
             bgColor={"#fff"}
           />
-          <VMGO>
+          <VMGO id="vmgo">
             <BGImage
               title="Vision"
               image={HomeBG}
@@ -72,6 +72,9 @@ const VMGO = styled.div`
   width: 100vw;
   display: inline-flex;
   gap: 25px;
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 const HomeContent = styled.div`
   width: 100vw;

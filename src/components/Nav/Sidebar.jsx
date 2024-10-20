@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,16 +19,16 @@ const Sidebar = () => {
         <CloseButton onClick={toggleSidebar}>Close</CloseButton>
         <NavLinks>
           <NavLink>
-            <a href="#">ABOUT US</a>
+            <Link to="/">ABOUT US</Link>
           </NavLink>
           <NavLink>
-            <a href="#">OUR TEAM</a>
+            <Link to="/team">OUR TEAM</Link>
           </NavLink>
           <NavLink>
             <a href="#">ABOUT WORK</a>
           </NavLink>
           <NavLink>
-            <a href="#">OUR SERVICES</a>
+            <Link to="/services">OUR SERVICES</Link>
           </NavLink>
           <NavLink>
             <a href="#">OUR FOUNDATION</a>
@@ -68,7 +69,7 @@ const HamburgerButton = styled.button`
     display: block;
     width: 20px;
     height: 2px;
-    background-color: #333;
+    background-color: #19191a;
     margin-bottom: 5px;
   }
   @media (min-width: 1024px) {
@@ -86,7 +87,7 @@ const SidebarContent = styled.div`
   background-color: #eee;
   color: #19191a;
   padding: 20px;
-  transform: translateX(100%);
+  transform: translateX(200%);
   transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
   visibility: hidden;
   will-change: filter;

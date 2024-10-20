@@ -1,0 +1,25 @@
+.card {
+  margin: 1rem;
+  max-width: 400px;
+  min-width: 250px;
+  border-radius: 1rem;
+  contain: layout;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.card.full-card {
+  width: 100vw;
+  max-width: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card.full-card .card-content {
+  margin-left: 1rem;
+}

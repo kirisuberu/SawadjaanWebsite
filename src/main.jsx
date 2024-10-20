@@ -12,6 +12,7 @@ import ReactDOM from "react-dom/client";
 import Landing from "./screens/Landing.jsx";
 import Contact from "./screens/Contact.jsx";
 import Team from "./screens/Team.jsx";
+import Services from "./screens/Services.jsx";
 import "./index.css";
 import "./scss/index.scss";
 
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/team",
     element: <Team />,
+  },
+  {
+    path: "/services",
+    element: <Services />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
