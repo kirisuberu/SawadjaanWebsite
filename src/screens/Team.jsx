@@ -77,7 +77,7 @@ As he continues to explore new opportunities in the field, Rhensivar remains com
         <TeamSuperCard
           image={JuneJuneSantos}
           title="Engr. June-June P. Santos"
-          subtitle="Principal Engineer"
+          subtitle="Principal Structural Engineer"
           location="Pulilan, Bulacan"
           caption={junejunecaption}
         />
