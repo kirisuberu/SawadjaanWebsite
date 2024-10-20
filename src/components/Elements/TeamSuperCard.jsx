@@ -25,8 +25,10 @@ export default function TeamSuperCard({
     <Wrapper>
       <SuperImage src={image} />
       <SuperContent>
-        <h2>{title}</h2>
-        <h3>{subtitle}</h3>
+        <HeaderContainer>
+          <h2>{title}</h2>
+          <h3>{subtitle}</h3>
+        </HeaderContainer>
         <h4>{location}</h4>
         <MultiParagraphProcessor caption={caption} />
       </SuperContent>
@@ -35,10 +37,11 @@ export default function TeamSuperCard({
 }
 
 const Wrapper = styled.div`
-  width: 100vw;
-  height: 520px;
+  width: 80vw;
+  margin: 0 10vw;
+  height: 420px;
   display: inline-flex;
-  background-color: aliceblue;
+  background-color: white;
   font-family: "Poppins", sans-serif;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -50,17 +53,17 @@ const Wrapper = styled.div`
 `;
 const SuperImage = styled.img`
   margin: 10px;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   @media (max-width: 768px) {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     margin: 0;
   }
 `;
 const SuperContent = styled.div`
-  height: 480px;
+  height: 380px;
   overflow-y: auto;
   margin: 30px;
   h2 {
@@ -71,7 +74,7 @@ const SuperContent = styled.div`
   }
   h4 {
     font-size: 1.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   p {
     font-size: 1.2rem;
@@ -96,4 +99,12 @@ const SuperContent = styled.div`
       font-size: 0.8rem;
     }
   }
+`;
+
+const HeaderContainer = styled.div`
+  width: 100%;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  padding-bottom: 10px;
 `;

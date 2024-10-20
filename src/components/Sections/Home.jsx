@@ -17,7 +17,6 @@ Although Abdurauf ventured into various businesses, his heart remained in struct
 Starting his own consultancy was not without challenges. Limited capital posed a significant hurdle, but Abdurauf recognized that real wealth lies in the knowledge, experience, and skills he had acquired over the years. With that understanding, he founded Abdurauf Sawadjaan Engineering Consultancy, a company built on perseverance and a commitment to quality.
 As we continue to grow, our company remains grounded in humility and service. Every project we undertake is guided by our belief that engineering is an opportunity to contribute positively to society and leave behind a legacy that benefits everyone for generations to come.
 `;
-As we continue to grow, our company remains grounded in humility and service. Every project we undertake is guided by our belief that engineering is a form of worship—an opportunity to contribute to society and leave behind a legacy that benefits others for generations to come.`;
 
   const VisionContent = `To be a beacon of excellence in engineering consultancy, building structures that serve communities with integrity, humility, and sustainability, while guided by strong moral values and a deep sense of responsibility.`;
 

@@ -65,7 +65,7 @@ export default function Services() {
             {
               name: "Telecommunications infrastructure design and installation",
             },
-            { name: "Fire alarm and detection systems" },
+            { name: "Fire detection and alarm systems" },
             { name: "Building automation systems (smart buildings)" },
             {
               name: "Low-voltage systems design (CCTV, security systems, data networks)",
@@ -134,7 +134,7 @@ const Wrapper = styled.div`
 `;
 const Title = styled.div`
   font-family: "Oswald", sans-serif;
-  font-weight: 600;
+  font-weight: 900 !important;
   letter-spacing: 0.5rem;
   color: #19191a;
   text-align: center;
