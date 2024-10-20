@@ -5,13 +5,16 @@ import SideBar from "../components/Nav/Sidebar";
 import ContactForm from "../components/Elements/ContactForm";
 import ServiceCard from "../components/Elements/ServiceCard";
 import imageBG from "../assets/img/company/COVER.png";
+import "../scss/index.scss";
 export default function Services() {
   return (
     <Wrapper id="services">
       <TopNavBar />
       <SideBar />
       <MainContent>
-        <Title>OUR SERVICES</Title>
+        <Title>
+          <h1>OUR SERVICES</h1>
+        </Title>
         <ServiceIntro>
           <h2>
             At Abdurauf Sawadjaan Engineering Consultancy, we offer a
@@ -134,15 +137,17 @@ const Wrapper = styled.div`
 `;
 const Title = styled.div`
   font-family: "Oswald", sans-serif;
-  font-weight: 900 !important;
   letter-spacing: 0.5rem;
   color: #19191a;
   text-align: center;
   margin-top: 3rem;
   padding-top: 3rem;
-  font-size: 4rem;
+  font-size: 1.5rem;
+  h1 {
+    font-weight: 900 !important;
+  }
   @media screen and (max-width: 768px) {
-    font-size: 3rem;
+    font-size: 1rem;
     letter-spacing: 0.3rem;
     margin-top: 1rem;
     padding-top: 1rem;
