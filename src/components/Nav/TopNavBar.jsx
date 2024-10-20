@@ -31,7 +31,7 @@ export default function TopNavBar() {
           <Link to="/team">OUR TEAM</Link>
         </NavLink>
         <Dropdown>
-          <DropdownToggle>ABOUT WORK</DropdownToggle>
+          <DropdownToggle>OUR WORKS</DropdownToggle>
           <DropdownMenu className="shadow">
             <DropDownList>
               <a href="#">Project Overview</a>
@@ -54,19 +54,11 @@ export default function TopNavBar() {
           <Link to="/services">OUR SERVICES</Link>
         </NavLink>
         <NavLink>
-          <a href="#">OUR PROJECTS</a>
+          <a href="#">OUR PARTNERS</a>
         </NavLink>
-        <Dropdown>
-          <DropdownToggle>CONTACT US</DropdownToggle>
-          <DropdownMenu className="shadow">
-            <DropDownList>
-              <Link to="/contact">Inquire Now!</Link>
-            </DropDownList>
-            <DropDownList>
-              <Link to="/contact">Working with Us</Link>
-            </DropDownList>
-          </DropdownMenu>
-        </Dropdown>
+        <NavLink>
+          <Link to="/contact">CONTACT US</Link>
+        </NavLink>
       </NavLinks>
     </NavContainer>
   );

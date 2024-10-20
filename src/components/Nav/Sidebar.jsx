@@ -25,16 +25,16 @@ const Sidebar = () => {
             <Link to="/team">OUR TEAM</Link>
           </NavLink>
           <NavLink>
-            <a href="#">ABOUT WORK</a>
+            <a href="#">OUR WORKS</a>
           </NavLink>
           <NavLink>
             <Link to="/services">OUR SERVICES</Link>
           </NavLink>
           <NavLink>
-            <a href="#">OUR FOUNDATION</a>
+            <a href="#">OUR PROJECTs</a>
           </NavLink>
           <NavLink>
-            <a href="#">CONTACT US</a>
+            <Link to="/contact">CONTACT US</Link>
           </NavLink>
         </NavLinks>
       </SidebarContent>
@@ -52,9 +52,14 @@ const CloseButton = styled.button`
   top: 10px;
   right: 10px;
   background-color: transparent;
+  color: #00674f;
   border: none;
   padding: 10px;
   cursor: pointer;
+  :hover {
+    color: white;
+    background-color: #00674f;
+  }
 `;
 const HamburgerButton = styled.button`
   z-index: 101;

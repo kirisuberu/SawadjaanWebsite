@@ -183,7 +183,6 @@ const ServiceIntro = styled.div`
 const ServiceBottom = styled.div`
   width: 100vw;
   padding: 3rem;
-
   display: block;
   justify-content: left;
   align-items: left;
@@ -213,6 +212,15 @@ const ServiceBottom = styled.div`
     span {
       color: #00674f;
       font-weight: 700;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      padding: 0 0 0 3rem;
+      font-size: 1.2rem;
     }
   }
 `;
