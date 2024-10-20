@@ -70,7 +70,7 @@ const ParagraphHolder = styled.div`
     font-size: 1.4rem;
     span {
       font-weight: 800;
-      color: #00674f;
+      color: #19191a;
     }
   }
 `;
