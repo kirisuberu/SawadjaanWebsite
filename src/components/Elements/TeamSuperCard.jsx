@@ -40,16 +40,28 @@ const Wrapper = styled.div`
   display: inline-flex;
   background-color: aliceblue;
   font-family: "Poppins", sans-serif;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const SuperImage = styled.img`
   margin: 10px;
   width: 500px;
   height: 500px;
   object-fit: cover;
+  @media (max-width: 768px) {
+    width: 350px;
+    height: 350px;
+    margin: 0;
+  }
 `;
 const SuperContent = styled.div`
   height: 480px;
-  overflow-y: scroll;
+  overflow-y: auto;
   margin: 30px;
   h2 {
     font-size: 2.5rem;
@@ -63,5 +75,25 @@ const SuperContent = styled.div`
   }
   p {
     font-size: 1.2rem;
+  }
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    h3 {
+      font-size: 1rem;
+      text-align: center;
+    }
+    h4 {
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    p {
+      font-size: 0.8rem;
+    }
   }
 `;

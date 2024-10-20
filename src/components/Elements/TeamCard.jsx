@@ -112,6 +112,18 @@ const ImageHolder = styled.div`
     border-radius: 1rem;
     margin: 0;
   }
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
 `;
 
 const TeamClose = styled.button`
@@ -131,7 +143,15 @@ const TeamClose = styled.button`
     background-color: #00674f;
   }
 `;
-
+const FullCardHolder = styled.div`
+  position: absolute;
+  padding: 1rem;
+  right: 0;
+  top: 0;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+`;
 const FullCard = styled.div`
   width: calc(100vw - 700px);
   height: 550px;
@@ -139,7 +159,7 @@ const FullCard = styled.div`
   margin-right: 40px;
   display: flex;
   scroll-behavior: smooth;
-  overflow-y: scroll;
+  overflow-y: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -147,7 +167,7 @@ const FullCard = styled.div`
     0,
     100,
     79,
-    1
+    0.9
   ); /* Semi-transparent emerald background */
   color: white;
   padding: 5rem;
@@ -171,16 +191,23 @@ const FullCard = styled.div`
   }
   @media (max-width: 768px) {
     width: 100%;
+    height: 100%;
+    overflow-y: scroll;
     margin: 0;
     padding: 0;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+    h3 {
+      font-size: 0.8rem;
+    }
   }
 `;
-const FullCardHolder = styled.div`
-  position: absolute;
-  padding: 1rem;
-  right: 0;
-  top: 0;
-`;
+
 const SeeMore = styled.button`
   position: absolute;
   bottom: 0;

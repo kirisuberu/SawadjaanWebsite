@@ -32,9 +32,11 @@ His design philosophy centers on advanced structural analysis, value engineering
 His strong network of industry connections, combined with his strategic marketing insight, makes him well-positioned to drive the firm’s growth. Karwin excels at building relationships, identifying new opportunities, and expanding the firm's reach within the construction and engineering sectors.
 By leveraging his engineering knowledge and marketing skills, Karwin ensures that the firm’s innovative and reliable solutions are communicated effectively to clients and partners.
 `;
-  const jimenezcaption = `The dynamic brother-and-sister team of Jerime and Jeraldine Jimenez brings a powerful combination of structural engineering and architectural expertise to Abdurauf Sawadjaan Engineering Consultancy. With Jerime’s deep understanding of structural integrity and Jeraldine’s creative vision, they offer clients seamless collaboration between form and function, ensuring projects are not only structurally sound but also aesthetically remarkable.
-Jerime, a skilled Structural Engineer, focuses on developing innovative engineering solutions that prioritize safety, efficiency, and sustainability. His technical proficiency and problem-solving skills allow him to approach each project with precision, ensuring that even the most complex structures meet the highest industry standards.
+  const jeraldinejimenezcaption = `The dynamic brother-and-sister team of Jerime and Jeraldine Jimenez brings a powerful combination of structural engineering and architectural expertise to Abdurauf Sawadjaan Engineering Consultancy. With Jerime’s deep understanding of structural integrity and Jeraldine’s creative vision, they offer clients seamless collaboration between form and function, ensuring projects are not only structurally sound but also aesthetically remarkable.
 Jeraldine, as a talented Architect, brings her passion for design to life through carefully crafted architectural plans that reflect the client’s vision. Her ability to blend practicality with creativity results in spaces that are both functional and visually appealing. Together, Jerime and Jeraldine create harmonious projects that align with client needs while delivering exceptional results in design and engineering.
+`;
+  const jerimejimenezcaption = `The dynamic brother-and-sister team of Jerime and Jeraldine Jimenez brings a powerful combination of structural engineering and architectural expertise to Abdurauf Sawadjaan Engineering Consultancy. With Jerime’s deep understanding of structural integrity and Jeraldine’s creative vision, they offer clients seamless collaboration between form and function, ensuring projects are not only structurally sound but also aesthetically remarkable.
+Jerime, a skilled Structural Engineer, focuses on developing innovative engineering solutions that prioritize safety, efficiency, and sustainability. His technical proficiency and problem-solving skills allow him to approach each project with precision, ensuring that even the most complex structures meet the highest industry standards.
 `;
   const rhenzcaption = `He plays a pivotal role in integrating advanced electronic systems into engineering projects. With a solid foundation in electronics and a keen understanding of modern technologies, Rhen is dedicated to enhancing the efficiency and functionality of various infrastructures.
 His expertise extends to the design and implementation of electronic systems, ensuring that all projects align with the latest technological advancements and industry standards. Rhen's commitment to quality and innovation ensures that every project benefits from optimal electronic solutions, contributing to the overall success and reliability of the consultancy's offerings.
@@ -95,21 +97,21 @@ As he continues to explore new opportunities in the field, Rhensivar remains com
           title="Archi. Jeraldine Jimenez"
           subtitle="Architect"
           location="Malolos, Bulacan"
-          caption={jimenezcaption}
+          caption={jeraldinejimenezcaption}
         />
         <TeamCard
           image={JerimeJimenez}
           title="Engr. Jerime Jimenez"
           subtitle="Structural Engineer"
           location="Malolos, Bulacan"
-          caption={jimenezcaption}
+          caption={jerimejimenezcaption}
         />
         <TeamCard
           image={RhenNadzrim}
           title="Engr. Rhen Nadzrim Sappayani"
           location="Jolo, Sulu"
           subtitle="Electronics Engineer"
-          caption={jimenezcaption}
+          caption={rhenzcaption}
         />
         <TeamCard
           image={EuniceBerina}
