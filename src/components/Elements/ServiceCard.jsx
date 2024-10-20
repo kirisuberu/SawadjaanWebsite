@@ -83,4 +83,12 @@ const TitleHolder = styled.div`
     line-height: 1.5;
     font-family: "Poppins", sans-serif;
   }
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+    margin-left: -1.3rem;
+    h1 {
+      padding: 1rem 1rem 1rem 2rem;
+      font-size: 1.5rem;
+    }
+  }
 `;

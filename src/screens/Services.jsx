@@ -141,6 +141,12 @@ const Title = styled.div`
   margin-top: 3rem;
   padding-top: 3rem;
   font-size: 4rem;
+  @media screen and (max-width: 768px) {
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
 `;
 const MainContent = styled.div`
   width: 100vw;
@@ -148,6 +154,10 @@ const MainContent = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  @media screen and (max-width: 768px) {
+    margin-top: 3rem;
+  }
 `;
 const ServiceIntro = styled.div`
   width: 100vw;
@@ -163,6 +173,11 @@ const ServiceIntro = styled.div`
     line-height: 1.5;
     text-align: left;
     justify-content: left;
+  }
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+    }
   }
 `;
 const ServiceBottom = styled.div`
