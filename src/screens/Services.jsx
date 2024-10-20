@@ -184,10 +184,11 @@ const ServiceBottom = styled.div`
   width: 100vw;
   padding: 3rem;
   display: block;
+  background-color: #19191a;
   justify-content: left;
   align-items: left;
   h2 {
-    color: #19191a;
+    color: white;
     font-family: "Poppins", sans-serif;
     font-size: 2rem;
     font-weight: 700;
@@ -198,19 +199,20 @@ const ServiceBottom = styled.div`
   p {
     padding: 0 0 0 5rem;
     margin: 0;
+    color: #aaa;
     font-size: 1.5rem;
     line-height: 1.5;
     font-family: "Poppins", sans-serif;
     &::before {
       content: "•";
-      color: #19191a;
+      color: white;
       display: inline-block;
       font-size: 2rem;
       width: 1em;
       margin-left: -1em;
     }
     span {
-      color: #19191a;
+      color: #fff;
       font-weight: 700;
     }
   }
