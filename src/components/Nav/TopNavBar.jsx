@@ -65,12 +65,12 @@ const NavLinks = styled.ul`
   .active {
     color: white;
     background-color: #333;
-    padding: 0.5rem 0.8rem;
-    border-radius: 0.5rem; /* Change this to your desired color */
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.5rem;
   }
   :not(.active) {
     color: #111;
-    padding: 0.5rem 0.8rem;
+    padding: 0.3rem 0.8rem;
   }
   @media (max-width: 1220px) {
     transform: translateX(200%);

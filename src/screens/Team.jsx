@@ -98,59 +98,59 @@ As he continues to explore new opportunities in the field, Rhensivar remains com
         <CardHolder>
           <TeamCard
             image={JeraldineJimenez}
-            title="Archi. Jeraldine Jimenez"
-            subtitle="Architect"
+            name="Archi. Jeraldine Jimenez"
+            title="Architect"
             location="Malolos, Bulacan"
             caption={jeraldinejimenezcaption}
           />
           <TeamCard
             image={JerimeJimenez}
-            title="Engr. Jerime Jimenez"
-            subtitle="Structural Engineer"
+            name="Engr. Jerime Jimenez"
+            title="Structural Engineer"
             location="Malolos, Bulacan"
             caption={jerimejimenezcaption}
           />
 
           <TeamCard
             image={EuniceBerina}
-            title="Engr. Eunice Berina"
+            name="Engr. Eunice Berina"
             location="Calamba, Laguna"
-            subtitle="Structural Engineer"
+            title="Structural Engineer"
             caption={eunicecaption}
           />
           <TeamCard
             image={JhunJacinto}
-            title="Engr. Jhun Jacinto"
+            name="Engr. Jhun Jacinto"
             location="Baler, Aurora"
-            subtitle="Structural Engineer"
+            title="Structural Engineer"
             caption={jhuncaption}
           />
           <TeamCard
             image={HishamEdding}
-            title="Engr. Hisham Edding"
+            name="Engr. Hisham Edding"
             location="Sibuco"
-            subtitle="Mechanical Engineer"
+            title="Mechanical Engineer"
             caption={hishamcaption}
           />
           <TeamCard
             image={MarkJeremyRaga}
-            title="Engr. Mark Jeremy Raga"
+            name="Engr. Mark Jeremy Raga"
             location="Zamboanga City"
-            subtitle="Geodetic Engineer"
+            title="Geodetic Engineer"
             caption={markcaption}
           />
           <TeamCard
             image={RhenNadzrim}
-            title="Engr. Rhen Nadzrim Sappayani"
+            name="Engr. Rhen Nadzrim Sappayani"
             location="Jolo, Sulu"
-            subtitle="Electronics Engineer"
+            title="Electronics Engineer"
             caption={rhenzcaption}
           />
           <TeamCard
             image={Rhensivar}
-            title="Engr. Rhensivar Sappayani"
+            name="Engr. Rhensivar Sappayani"
             location="Jolo, Sulu"
-            subtitle="Electronics Engineer"
+            title="Electronics Engineer"
             caption={rhensivarcaption}
           />
         </CardHolder>
