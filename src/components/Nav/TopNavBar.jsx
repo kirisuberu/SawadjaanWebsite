@@ -26,7 +26,7 @@ export default function TopNavBar() {
           <Link to="/services">OUR SERVICES</Link>
         </NavLink>
         <NavLink>
-          <a href="/partners">OUR PARTNERS</a>
+          <Link to="/partners">OUR PARTNERS</Link>
         </NavLink>
         <NavLink>
           <Link to="/contact">CONTACT US</Link>
