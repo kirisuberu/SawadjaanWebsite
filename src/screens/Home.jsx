@@ -6,9 +6,9 @@ import SideBar from "../components/Nav/Sidebar";
 export default function Home() {
   return (
     <Wrapper id="contact">
-      <Title>HOME PAGE</Title>
       <TopNavBar />
       <SideBar />
+      <Title>HOME PAGE</Title>
     </Wrapper>
   );
 }

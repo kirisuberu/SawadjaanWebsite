@@ -40,16 +40,16 @@ const TeamCard = ({ image, title, subtitle, location, caption }) => {
       animate="animate"
       exit="exit"
       variants={animations}
-      transition={{ duration: 0.5 }}
-      style={{ height: showFullCard ? "550px" : "550px" }}
+      transition={{ duration: 0.3 }}
+      whileHover={{ scale: 1.1 }}
     >
       <ImageHolder>
         <img
           src={image}
           alt={title}
           style={{
-            width: showFullCard ? "550px" : "400px",
-            height: showFullCard ? "550px" : "400px",
+            width: showFullCard ? "500px" : "300px",
+            height: showFullCard ? "500px" : "300px",
           }}
         />
       </ImageHolder>
@@ -78,8 +78,7 @@ export default TeamCard;
 
 const Wrapper = styled(motion.div)`
   margin: 1rem;
-  width: 550px;
-  height: 550px;
+
   border-radius: 1rem;
   contain: layout;
   overflow: hidden;
@@ -87,28 +86,22 @@ const Wrapper = styled(motion.div)`
   cursor: pointer;
   h2 {
     text-align: center;
-    font-size: 1.7rem;
-    margin: 0.5rem 0;
+    font-size: 1.3rem;
+    margin: 0.5rem 0 0.3rem;
     font-weight: 700;
   }
 
   p {
     text-align: center;
-    font-size: 1rem;
-    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    margin: 0.3rem 0 1rem;
   }
 `;
 
 const ImageHolder = styled.div`
-  width: 400px;
-  max-width: 550px;
-  height: 400px;
-  max-height: 550px;
   img {
-    width: 400px;
-    max-width: 550px;
-    height: 400px;
-    max-height: 550px;
+    width: 300px;
+    height: 300px;
     border-radius: 1rem;
     margin: 0;
   }
@@ -118,10 +111,6 @@ const ImageHolder = styled.div`
     object-fit: cover;
     object-position: center;
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
     }
   }
 `;
@@ -154,7 +143,7 @@ const FullCardHolder = styled.div`
 `;
 const FullCard = styled.div`
   width: calc(100vw - 700px);
-  height: 550px;
+  height: 500px;
   margin-top: 30px;
   margin-right: 40px;
   display: flex;

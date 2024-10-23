@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Team from "./../../screens/Team";
+import { motion } from "framer-motion";
 
 export default function TeamSuperCard({
   image,
@@ -38,7 +39,6 @@ export default function TeamSuperCard({
 
 const Wrapper = styled.div`
   width: 80vw;
-  margin: 0 10vw;
   height: 420px;
   display: inline-flex;
   background-color: white;
@@ -46,7 +46,7 @@ const Wrapper = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     justify-content: center;
     align-items: center;
   }
@@ -80,6 +80,7 @@ const SuperContent = styled.div`
     font-size: 1.2rem;
   }
   @media (max-width: 768px) {
+    height: 100%;
     justify-content: center;
     align-items: center;
 

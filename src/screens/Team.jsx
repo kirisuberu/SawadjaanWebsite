@@ -63,95 +63,97 @@ As he continues to explore new opportunities in the field, Rhensivar remains com
 `;
   return (
     <Wrapper id="team">
-      <Title>
-        <h1>OUR TEAM</h1>
-      </Title>
       <TopNavBar />
       <SideBar />
-      <SuperTeam>
-        <LineDiv />
-        <TeamSuperCard
-          image={Abdurauf}
-          title="Engr. Abdurauf Sawadjaan"
-          subtitle="Managing Director & Founder"
-          caption={abduraufcaption}
-        />
-        <LineDiv />
-        <TeamSuperCard
-          image={JuneJuneSantos}
-          title="Engr. June-June P. Santos"
-          subtitle="Principal Structural Engineer"
-          location="Pulilan, Bulacan"
-          caption={junejunecaption}
-        />
-        <LineDiv />
-        <TeamSuperCard
-          image={KarwinHamjani}
-          title="Engr. Karwin Hamjani"
-          subtitle="Marketing Lead & Structural Engineer"
-          location="Zamboanga City"
-          caption={karwincaption}
-        />
-        <LineDiv />
-      </SuperTeam>
-      <CardHolder>
-        <TeamCard
-          image={JeraldineJimenez}
-          title="Archi. Jeraldine Jimenez"
-          subtitle="Architect"
-          location="Malolos, Bulacan"
-          caption={jeraldinejimenezcaption}
-        />
-        <TeamCard
-          image={JerimeJimenez}
-          title="Engr. Jerime Jimenez"
-          subtitle="Structural Engineer"
-          location="Malolos, Bulacan"
-          caption={jerimejimenezcaption}
-        />
-        <TeamCard
-          image={RhenNadzrim}
-          title="Engr. Rhen Nadzrim Sappayani"
-          location="Jolo, Sulu"
-          subtitle="Electronics Engineer"
-          caption={rhenzcaption}
-        />
-        <TeamCard
-          image={EuniceBerina}
-          title="Engr. Eunice Berina"
-          location="Calamba, Laguna"
-          subtitle="Structural Engineer"
-          caption={eunicecaption}
-        />
-        <TeamCard
-          image={JhunJacinto}
-          title="Engr. Jhun Jacinto"
-          location="Baler, Aurora"
-          subtitle="Structural Engineer"
-          caption={jhuncaption}
-        />
-        <TeamCard
-          image={HishamEdding}
-          title="Engr. Hisham Edding"
-          location="Sibuco"
-          subtitle="Mechanical Engineer"
-          caption={hishamcaption}
-        />
-        <TeamCard
-          image={MarkJeremyRaga}
-          title="Engr. Mark Jeremy Raga"
-          location="Zamboanga City"
-          subtitle="Geodetic Engineer"
-          caption={markcaption}
-        />
-        <TeamCard
-          image={Rhensivar}
-          title="Engr. Rhensivar Sappayani"
-          location="Jolo, Sulu"
-          subtitle="Electronics Engineer"
-          caption={rhensivarcaption}
-        />
-      </CardHolder>
+      <MainContent>
+        <Title>
+          <h1>OUR TEAM</h1>
+        </Title>
+        <SuperTeam>
+          <LineDiv />
+          <TeamSuperCard
+            image={Abdurauf}
+            title="Engr. Abdurauf Sawadjaan"
+            subtitle="Managing Director & Founder"
+            caption={abduraufcaption}
+          />
+          <LineDiv />
+          <TeamSuperCard
+            image={JuneJuneSantos}
+            title="Engr. June-June P. Santos"
+            subtitle="Principal Structural Engineer"
+            location="Pulilan, Bulacan"
+            caption={junejunecaption}
+          />
+          <LineDiv />
+          <TeamSuperCard
+            image={KarwinHamjani}
+            title="Engr. Karwin Hamjani"
+            subtitle="Marketing Lead & Structural Engineer"
+            location="Zamboanga City"
+            caption={karwincaption}
+          />
+          <LineDiv />
+        </SuperTeam>
+        <CardHolder>
+          <TeamCard
+            image={JeraldineJimenez}
+            title="Archi. Jeraldine Jimenez"
+            subtitle="Architect"
+            location="Malolos, Bulacan"
+            caption={jeraldinejimenezcaption}
+          />
+          <TeamCard
+            image={JerimeJimenez}
+            title="Engr. Jerime Jimenez"
+            subtitle="Structural Engineer"
+            location="Malolos, Bulacan"
+            caption={jerimejimenezcaption}
+          />
+          <TeamCard
+            image={RhenNadzrim}
+            title="Engr. Rhen Nadzrim Sappayani"
+            location="Jolo, Sulu"
+            subtitle="Electronics Engineer"
+            caption={rhenzcaption}
+          />
+          <TeamCard
+            image={EuniceBerina}
+            title="Engr. Eunice Berina"
+            location="Calamba, Laguna"
+            subtitle="Structural Engineer"
+            caption={eunicecaption}
+          />
+          <TeamCard
+            image={JhunJacinto}
+            title="Engr. Jhun Jacinto"
+            location="Baler, Aurora"
+            subtitle="Structural Engineer"
+            caption={jhuncaption}
+          />
+          <TeamCard
+            image={HishamEdding}
+            title="Engr. Hisham Edding"
+            location="Sibuco"
+            subtitle="Mechanical Engineer"
+            caption={hishamcaption}
+          />
+          <TeamCard
+            image={MarkJeremyRaga}
+            title="Engr. Mark Jeremy Raga"
+            location="Zamboanga City"
+            subtitle="Geodetic Engineer"
+            caption={markcaption}
+          />
+          <TeamCard
+            image={Rhensivar}
+            title="Engr. Rhensivar Sappayani"
+            location="Jolo, Sulu"
+            subtitle="Electronics Engineer"
+            caption={rhensivarcaption}
+          />
+        </CardHolder>
+      </MainContent>
       <Footer />
     </Wrapper>
   );
@@ -184,11 +186,26 @@ const CardHolder = styled.div`
   margin-top: 2rem;
   flex-wrap: wrap;
 `;
-const SuperTeam = styled.div``;
+const SuperTeam = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
 
 const LineDiv = styled.div`
   height: 3px;
   width: 100vw;
   background-color: #19191a;
   margin: 20px 0;
+`;
+
+const MainContent = styled.div`
+  margin: 0 10vw;
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
 `;
