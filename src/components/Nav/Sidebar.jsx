@@ -25,13 +25,13 @@ const Sidebar = () => {
             <Link to="/team">OUR TEAM</Link>
           </NavLink>
           <NavLink>
-            <a href="#">OUR WORKS</a>
+            <Link to="/works">OUR WORKS</Link>
           </NavLink>
           <NavLink>
             <Link to="/services">OUR SERVICES</Link>
           </NavLink>
           <NavLink>
-            <a href="#">OUR PROJECTs</a>
+            <Link to="/partners">OUR PARTNERS</Link>
           </NavLink>
           <NavLink>
             <Link to="/contact">CONTACT US</Link>

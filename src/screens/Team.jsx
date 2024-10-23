@@ -17,6 +17,7 @@ import JhunJacinto from "./../assets/img/team/JhunJacinto.png";
 import HishamEdding from "./../assets/img/team/HishamEdding.png";
 import MarkJeremyRaga from "./../assets/img/team/MarkJeremyRaga.png";
 import Rhensivar from "./../assets/img/team/RhensivarSappayani.png";
+import Footer from "../components/Nav/Footer";
 export default function Team() {
   const abduraufcaption = `Abdurauf I. Sawadjaan holds a Master’s Degree in Civil Engineering, specializing in Structural Engineering, from the Polytechnic University of the Philippines in Sta. Mesa, Manila. As a Licensed Master Plumber, Safety Officer 2, and DPWH Accredited Materials Engineer I, he brings a well-rounded set of skills to every project.
 With a focus on delivering sustainable, efficient, and structurally sound solutions, Abdurauf ensures that every phase of a project— from concept and design to construction and completion—is managed with precision. Combining advanced design tools and strict adherence to engineering standards, his consultancy provides clients with dependable results that prioritize safety and quality.
@@ -62,7 +63,9 @@ As he continues to explore new opportunities in the field, Rhensivar remains com
 `;
   return (
     <Wrapper id="team">
-      <Title>EXECUTIVE TEAM</Title>
+      <Title>
+        <h1>OUR TEAM</h1>
+      </Title>
       <TopNavBar />
       <SideBar />
       <SuperTeam>
@@ -149,23 +152,31 @@ As he continues to explore new opportunities in the field, Rhensivar remains com
           caption={rhensivarcaption}
         />
       </CardHolder>
+      <Footer />
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
   width: 100vw;
-  padding-top: 60px;
 `;
-const Title = styled.h1`
-  margin: 2rem 0;
+const Title = styled.div`
   font-family: "Oswald", sans-serif;
-  font-weight: 600;
   letter-spacing: 0.5rem;
   color: #19191a;
   text-align: center;
   margin-top: 3rem;
-  font-size: 4rem;
+  padding-top: 3rem;
+  font-size: 1.5rem;
+  h1 {
+    font-weight: 900 !important;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
 `;
 const CardHolder = styled.div`
   display: flex;

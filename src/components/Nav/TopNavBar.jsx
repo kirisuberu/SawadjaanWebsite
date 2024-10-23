@@ -13,50 +13,20 @@ export default function TopNavBar() {
         </Link>
       </Logo>
       <NavLinks className="oswaldDB">
-        <li className="dropdown">
-          <Dropdown>
-            <DropdownToggle>ABOUT US</DropdownToggle>
-            <DropdownMenu className="shadow">
-              <DropDownList>
-                <Link to="/">Our Story</Link>
-              </DropDownList>
-              <DropDownList>
-                <Link to="/">Vision & Mission</Link>
-              </DropDownList>
-              <DropDownList>
-                <Link to="/">Goals & Objectives</Link>
-              </DropDownList>
-            </DropdownMenu>
-          </Dropdown>
-        </li>
+        <NavLink>
+          <Link to="/about">ABOUT US</Link>
+        </NavLink>
         <NavLink>
           <Link to="/team">OUR TEAM</Link>
         </NavLink>
-        <Dropdown>
-          <DropdownToggle>OUR WORKS</DropdownToggle>
-          <DropdownMenu className="shadow">
-            <DropDownList>
-              <a href="#">Project Overview</a>
-            </DropDownList>
-            <DropDownList>
-              <a href="#">Residential</a>
-            </DropDownList>
-            <DropDownList>
-              <a href="#">Office & Commercial</a>
-            </DropDownList>
-            <DropDownList>
-              <a href="#">Institutional</a>
-            </DropDownList>
-            <DropDownList>
-              <a href="#">Hospitality</a>
-            </DropDownList>
-          </DropdownMenu>
-        </Dropdown>
+        <NavLink>
+          <Link to="/works">OUR WORKS</Link>
+        </NavLink>
         <NavLink>
           <Link to="/services">OUR SERVICES</Link>
         </NavLink>
         <NavLink>
-          <a href="#">OUR PARTNERS</a>
+          <a href="/partners">OUR PARTNERS</a>
         </NavLink>
         <NavLink>
           <Link to="/contact">CONTACT US</Link>

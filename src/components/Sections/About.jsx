@@ -10,6 +10,7 @@ import BGImageObjectives from "../Elements/BGImageObjectives";
 //assets
 import HomeBG from "../../assets/img/sampleBG.jpg";
 import ImageSlider from "../Elements/ImageSlider";
+import Footer from "../Nav/Footer";
 export default function About() {
   const StoryContent = `Abdurauf Sawadjaan Engineering Consultancy was founded with a clear purpose: to contribute to the betterment of communities through thoughtful, resilient, and enduring infrastructure. Our founder, Abdurauf I. Sawadjaan, has always believed in the importance of stewardship and responsibility toward the environment. This guiding principle instilled in him the desire to build—both physically and socially—for the benefit of all, shaping his path toward becoming a civil engineer.
 After earning his Bachelor of Science in Civil Engineering from Western Mindanao State University, Abdurauf’s thirst for knowledge led him to pursue a master’s degree at the prestigious Polytechnic University of the Philippines. During this journey, he was greatly influenced by Engr. June-June Santos, a mentor and expert in structural engineering who became a source of inspiration and a partner in the industry.
@@ -27,6 +28,9 @@ As we continue to grow, our company remains grounded in humility and service. Ev
       <Sidebar />
       <HomeContent>
         <MainContent>
+          <Title>
+            <h1>ABOUT US</h1>
+          </Title>
           <ImageSlider />
           <ImageLeft
             title="Our Story"
@@ -58,6 +62,7 @@ As we continue to grow, our company remains grounded in humility and service. Ev
             />
           </VMGO>
         </MainContent>
+        <Footer />
       </HomeContent>
     </Wrapper>
   );
@@ -80,4 +85,22 @@ const HomeContent = styled.div`
 const MainContent = styled.div`
   margin-top: 60px;
   width: 100vw;
+`;
+const Title = styled.div`
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.5rem;
+  color: #19191a;
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  font-size: 1.5rem;
+  h1 {
+    font-weight: 900 !important;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
 `;

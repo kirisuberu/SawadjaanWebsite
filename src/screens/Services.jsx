@@ -6,6 +6,7 @@ import ContactForm from "../components/Elements/ContactForm";
 import ServiceCard from "../components/Elements/ServiceCard";
 import imageBG from "../assets/img/company/COVER.png";
 import "../scss/index.scss";
+import Footer from "../components/Nav/Footer";
 export default function Services() {
   return (
     <Wrapper id="services">
@@ -127,6 +128,7 @@ export default function Services() {
             single-source project delivery
           </p>
         </ServiceBottom>
+        <Footer />
       </MainContent>
     </Wrapper>
   );

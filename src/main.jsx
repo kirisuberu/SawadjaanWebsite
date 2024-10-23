@@ -14,6 +14,8 @@ import Contact from "./screens/Contact.jsx";
 import Team from "./screens/Team.jsx";
 import Services from "./screens/Services.jsx";
 import Home from "./screens/Home.jsx";
+import Works from "./screens/Works.jsx";
+import Partners from "./screens/Partners.jsx";
 
 import "./index.css";
 import "./scss/index.scss";
@@ -27,17 +29,26 @@ const router = createBrowserRouter([
     path: "/about",
     element: <Landing />,
   },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
+
   {
     path: "/team",
     element: <Team />,
   },
   {
+    path: "/works",
+    element: <Works />,
+  },
+  {
     path: "/services",
     element: <Services />,
+  },
+  {
+    path: "/partners",
+    element: <Partners />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
