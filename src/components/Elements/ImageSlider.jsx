@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import styled from "styled-components";
 
 const ImageSlider = () => {
   const images = [

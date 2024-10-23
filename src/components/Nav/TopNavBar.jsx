@@ -7,8 +7,10 @@ export default function TopNavBar() {
   return (
     <NavContainer>
       <Logo>
-        <MainLogo src={mainLogo} alt="Logo" />
-        <CompanyName src={companyName} alt=" NameLogo" />
+        <Link to="/">
+          <MainLogo src={mainLogo} alt="Logo" />
+          <CompanyName src={companyName} alt=" NameLogo" />
+        </Link>
       </Logo>
       <NavLinks className="oswaldDB">
         <li className="dropdown">

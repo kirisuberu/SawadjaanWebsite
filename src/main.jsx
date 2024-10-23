@@ -13,16 +13,18 @@ import Landing from "./screens/Landing.jsx";
 import Contact from "./screens/Contact.jsx";
 import Team from "./screens/Team.jsx";
 import Services from "./screens/Services.jsx";
+import Home from "./screens/Home.jsx";
+
 import "./index.css";
 import "./scss/index.scss";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Landing />,
+    element: <Home />,
   },
   {
-    path: "/home",
+    path: "/about",
     element: <Landing />,
   },
   {
