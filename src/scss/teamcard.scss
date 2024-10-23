@@ -10,10 +10,15 @@
 }
 
 .card.full-card {
-  width: 100vw;
+  width: 90vw;
   max-width: none;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 768px) {
+    width: 100vw;
+  }
 }
 
 .card-content {

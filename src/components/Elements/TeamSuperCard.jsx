@@ -23,22 +23,29 @@ export default function TeamSuperCard({
     );
   };
   return (
-    <Wrapper>
+    <Wrapper
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.5 }}
+      transition={{ type: "spring", duration: 0.2 }}
+      viewport={{ once: true }}
+    >
       <SuperImage src={image} />
       <SuperContent>
         <HeaderContainer>
           <h2>{title}</h2>
           <h3>{subtitle}</h3>
+          <h4>{location}</h4>
         </HeaderContainer>
-        <h4>{location}</h4>
+
         <MultiParagraphProcessor caption={caption} />
       </SuperContent>
     </Wrapper>
   );
 }
 
-const Wrapper = styled.div`
-  width: 80vw;
+const Wrapper = styled(motion.div)`
+  width: 85vw;
   height: 420px;
   display: inline-flex;
   background-color: white;
@@ -66,18 +73,19 @@ const SuperContent = styled.div`
   height: 380px;
   overflow-y: auto;
   margin: 30px;
+  margin-bottom: 10px;
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 20px;
   }
   p {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   @media (max-width: 768px) {
     height: 100%;
@@ -97,7 +105,7 @@ const SuperContent = styled.div`
       text-align: center;
     }
     p {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
   }
 `;
@@ -107,5 +115,4 @@ const HeaderContainer = styled.div`
   background-color: white;
   position: sticky;
   top: 0;
-  padding-bottom: 10px;
 `;

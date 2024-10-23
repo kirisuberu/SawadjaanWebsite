@@ -25,7 +25,14 @@ const TeamCard = ({ image, title, subtitle, location, caption }) => {
     return (
       <div style={{ margin: "2rem" }}>
         {paragraphs.map((paragraph, index) => (
-          <p style={{ textIndent: "2rem", textAlign: "justify" }} key={index}>
+          <p
+            style={{
+              textIndent: "2rem",
+              textAlign: "justify",
+              fontSize: "0.9rem",
+            }}
+            key={index}
+          >
             {paragraph}
           </p>
         ))}
@@ -35,7 +42,7 @@ const TeamCard = ({ image, title, subtitle, location, caption }) => {
   return (
     <Wrapper
       className={`card ${showFullCard ? "full-card" : ""}`}
-      onMouseLeave={handleCardMouseLeave}
+      //onMouseLeave={handleCardMouseLeave}
       initial="initial"
       animate="animate"
       exit="exit"
@@ -48,18 +55,20 @@ const TeamCard = ({ image, title, subtitle, location, caption }) => {
           src={image}
           alt={title}
           style={{
-            width: showFullCard ? "500px" : "300px",
-            height: showFullCard ? "500px" : "300px",
+            width: showFullCard ? "300px" : "300px",
+            height: showFullCard ? "300px" : "300px",
           }}
         />
       </ImageHolder>
       {showFullCard ? (
         <FullCardHolder>
           <FullCard className="text-container">
-            <h2>{title}</h2>
-            <p id="subtitle">{subtitle}</p>
-            <h3 style={{ marginBottom: "2rem" }}>{location}</h3>
-            <MultiParagraphProcessor caption={caption} />
+            <Content>
+              <h2>{title}</h2>
+              <p id="subtitle">{subtitle}</p>
+              <h3>{location}</h3>
+              <MultiParagraphProcessor caption={caption} />
+            </Content>
             <TeamClose onClick={() => handleCardClose()}>Close</TeamClose>
           </FullCard>
         </FullCardHolder>
@@ -78,7 +87,6 @@ export default TeamCard;
 
 const Wrapper = styled(motion.div)`
   margin: 1rem;
-
   border-radius: 1rem;
   contain: layout;
   overflow: hidden;
@@ -121,7 +129,8 @@ const TeamClose = styled.button`
   top: 0;
   right: 0;
   font-size: 0.7rem;
-  color: #ffffff;
+  color: #19191a;
+  background-color: white;
   border: none;
 
   cursor: pointer;
@@ -129,12 +138,13 @@ const TeamClose = styled.button`
   border-bottom-right-radius: 0;
   border-top-left-radius: 0;
   &:hover {
-    background-color: #19191a;
+    background-color: white;
   }
 `;
 const FullCardHolder = styled.div`
   position: absolute;
   padding: 1rem;
+  height: 500px;
   right: 0;
   top: 0;
   @media (max-width: 768px) {
@@ -142,13 +152,11 @@ const FullCardHolder = styled.div`
   }
 `;
 const FullCard = styled.div`
-  width: calc(100vw - 700px);
   height: 500px;
   margin-top: 30px;
   margin-right: 40px;
   display: flex;
-  scroll-behavior: smooth;
-  overflow-y: auto;
+  overflow-y: visible;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -163,14 +171,9 @@ const FullCard = styled.div`
   font-family: "Poppins", sans-serif;
   text-align: center;
   h2 {
-    font-size: 1.7rem;
-    margin: 0.25rem 0;
+    font-size: 1.5rem;
+    margin: 0;
     font-weight: 700;
-    position: sticky;
-  }
-  p {
-    font-size: 1rem;
-    margin: 0.5rem 0;
     position: sticky;
   }
   h3 {
@@ -178,6 +181,12 @@ const FullCard = styled.div`
     font-size: 1rem;
     margin: 0;
   }
+  p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    position: sticky;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
     height: 100%;
@@ -209,4 +218,8 @@ const SeeMore = styled.button`
   &:hover {
     background-color: #19191a;
   }
+`;
+
+const Content = styled.div`
+  margin: 0;
 `;

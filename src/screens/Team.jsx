@@ -204,7 +204,7 @@ const LineDiv = styled.div`
 `;
 
 const MainContent = styled.div`
-  margin: 0 10vw;
+  margin: 0 40px;
   @media screen and (max-width: 768px) {
     margin: 0;
   }
