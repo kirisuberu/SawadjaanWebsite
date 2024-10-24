@@ -29,7 +29,7 @@ const LogoHolder = styled.div`
   justify-content: center;
   width: 10%;
   img {
-    height: 80px;
+    height: 100px;
   }
 `;
 

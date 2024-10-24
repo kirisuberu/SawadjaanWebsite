@@ -110,13 +110,7 @@ As he continues to explore new opportunities in the field, Rhensivar remains com
             location="Malolos, Bulacan"
             caption={jerimejimenezcaption}
           />
-          <TeamCard
-            image={RhenNadzrim}
-            title="Engr. Rhen Nadzrim Sappayani"
-            location="Jolo, Sulu"
-            subtitle="Electronics Engineer"
-            caption={rhenzcaption}
-          />
+
           <TeamCard
             image={EuniceBerina}
             title="Engr. Eunice Berina"
@@ -144,6 +138,13 @@ As he continues to explore new opportunities in the field, Rhensivar remains com
             location="Zamboanga City"
             subtitle="Geodetic Engineer"
             caption={markcaption}
+          />
+          <TeamCard
+            image={RhenNadzrim}
+            title="Engr. Rhen Nadzrim Sappayani"
+            location="Jolo, Sulu"
+            subtitle="Electronics Engineer"
+            caption={rhenzcaption}
           />
           <TeamCard
             image={Rhensivar}
@@ -184,6 +185,7 @@ const CardHolder = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  margin-bottom: 3rem;
   flex-wrap: wrap;
 `;
 const SuperTeam = styled.div`
