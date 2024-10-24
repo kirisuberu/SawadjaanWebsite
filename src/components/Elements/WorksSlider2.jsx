@@ -1,90 +1,88 @@
 import React, { useState, useEffect, useCallback } from "react";
 import styled from "styled-components";
 //images
-import Picture1 from "../../assets/img/projects/works1/Picture1.png";
-import Picture2 from "../../assets/img/projects/works1/Picture2.png";
-import Picture3 from "../../assets/img/projects/works1/Picture3.jpg";
-import Picture4 from "../../assets/img/projects/works1/Picture4.jpg";
-import Picture5 from "../../assets/img/projects/works1/Picture5.jpg";
-import Picture6 from "../../assets/img/projects/works1/Picture6.jpg";
-import Picture7 from "../../assets/img/projects/works1/Picture7.jpg";
-import Picture8 from "../../assets/img/projects/works1/Picture8.jpg";
-import Picture9 from "../../assets/img/projects/works1/Picture9.jpg";
-import Picture10 from "../../assets/img/projects/works1/Picture10.jpg";
-import Picture11 from "../../assets/img/projects/works1/Picture11.jpg";
-import Picture12 from "../../assets/img/projects/works1/Picture12.jpg";
-import Picture13 from "../../assets/img/projects/works1/Picture13.jpg";
-import Picture14 from "../../assets/img/projects/works1/Picture14.jpg";
+import img1 from "../../assets/img/projects/works2/img1.png";
+import img2 from "../../assets/img/projects/works2/img2.png";
+import img3 from "../../assets/img/projects/works2/img3.png";
+import img4 from "../../assets/img/projects/works2/img4.png";
+import img5 from "../../assets/img/projects/works2/img5.png";
+import img6 from "../../assets/img/projects/works2/img6.png";
+import img7 from "../../assets/img/projects/works2/img7.png";
+import img8 from "../../assets/img/projects/works2/img8.png";
+import img9 from "../../assets/img/projects/works2/img9.png";
+import img10 from "../../assets/img/projects/works2/img10.png";
+import img11 from "../../assets/img/projects/works2/img11.png";
+import img12 from "../../assets/img/projects/works2/img12.png";
+import img13 from "../../assets/img/projects/works2/img13.png";
+import img14 from "../../assets/img/projects/works2/img14.png";
+import img15 from "../../assets/img/projects/works2/img15.png";
+import img16 from "../../assets/img/projects/works2/img16.png";
+import img17 from "../../assets/img/projects/works2/img17.png";
+import img18 from "../../assets/img/projects/works2/img18.png";
+import img19 from "../../assets/img/projects/works2/img19.png";
+import img20 from "../../assets/img/projects/works2/img20.png";
 
-const WorksSlider1 = ({
+const WorksSlider2 = ({
   images = [
     {
-      url: Picture1,
-      title: "Projects 1",
+      url: img1,
     },
     {
-      url: Picture2,
-      title: "Projects 2",
+      url: img2,
     },
     {
-      url: Picture3,
-      title: "Lubag Residence",
-      subtitle: "Naic,Cavite",
+      url: img3,
     },
     {
-      url: Picture4,
-      title: "Tumanda Residence",
-      subtitle: "Fort Bonifacio, Taguig City",
+      url: img4,
     },
     {
-      url: Picture5,
-      title: "Salvacion Residence",
-      subtitle: "Glenrose East, Taytay, Rizal",
+      url: img5,
     },
     {
-      url: Picture6,
-      title: "Villanueva Residence",
-      subtitle: "Summerhills, Antipolo City",
+      url: img6,
     },
     {
-      url: Picture7,
-      title: "Suarez Residence",
-      subtitle: "The Sonoma, Sta. Rosa, Laguna",
+      url: img7,
     },
     {
-      url: Picture8,
-      title: "Macarubbo Residence",
-      subtitle: "Summerhills, Antipolo City",
+      url: img8,
     },
     {
-      url: Picture9,
-      title: "Mendi Residence",
-      subtitle: "La Brea, Quezon City",
+      url: img9,
     },
     {
-      url: Picture10,
-      title: "Retirado Residence",
-      subtitle: "Maharlika, Taytay, Rizal",
+      url: img10,
     },
     {
-      url: Picture11,
-      title: "Lim Residence",
-      subtitle: "Vista Verde, Cainta, Rizal",
+      url: img11,
     },
     {
-      url: Picture12,
-      title: "Peralta Residence",
-      subtitle: "Tanza, Cavite",
+      url: img12,
     },
     {
-      url: Picture13,
-      title: "Quirolgico Residence",
-      subtitle: "Villa Magdalena 3, Caloocan City",
+      url: img13,
     },
     {
-      url: Picture14,
-      title: "Omengan Residence",
-      subtitle: "Beverly Hills, Taytay, Rizal",
+      url: img14,
+    },
+    {
+      url: img15,
+    },
+    {
+      url: img16,
+    },
+    {
+      url: img17,
+    },
+    {
+      url: img18,
+    },
+    {
+      url: img19,
+    },
+    {
+      url: img20,
     },
   ],
   autoScrollInterval = 5000,
@@ -182,7 +180,7 @@ const WorksSlider1 = ({
   );
 };
 
-export default WorksSlider1;
+export default WorksSlider2;
 
 const SliderContainer = styled.div`
   position: relative;
