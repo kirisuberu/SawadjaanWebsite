@@ -895,7 +895,7 @@ As he continues to explore new opportunities in the field, Rhensivar remains com
   @media screen and (max-width: 768px) {
     margin: 0;
   }
-`;function qi({image:e,title:t,bullets:n}){return y.jsxs(IM,{children:[y.jsx(VM,{children:y.jsx("h1",{children:t})}),y.jsx(zM,{children:n?n.map((r,i)=>y.jsx("div",{style:{margin:"10px 0"},children:y.jsx("p",{className:"font20 extraBold",children:r.name})},i)):null})]})}const IM=R(Ii.div)`
+`;function qi({image:e,title:t,bullets:n}){return y.jsxs(IM,{children:[y.jsx(VM,{children:y.jsx("h1",{children:t})}),y.jsx(zM,{children:n?n.map((r,i)=>y.jsx("div",{style:{margin:"0"},children:y.jsx("p",{className:"font20 extraBold",children:r.name})},i)):null})]})}const IM=R(Ii.div)`
   width: 90vw;
   background-image: url(${e=>e.image});
   background-size: cover;
@@ -920,12 +920,12 @@ As he continues to explore new opportunities in the field, Rhensivar remains com
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0 0 20px 0;
+  padding: 0;
   p {
     padding: 0 0 0 5rem;
     margin: 0;
     font-size: 1.2rem;
-    line-height: 1.5;
+    line-height: 1.2;
     font-family: "Poppins", sans-serif;
     &::before {
       content: "•";
@@ -1011,13 +1011,14 @@ As he continues to explore new opportunities in the field, Rhensivar remains com
   width: 100vw;
   padding: 3rem;
   display: block;
+  margin-top: 5rem;
   background-color: #19191a;
   justify-content: left;
   align-items: left;
   h2 {
     color: white;
     font-family: "Poppins", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.5;
     text-align: left;
@@ -1027,7 +1028,7 @@ As he continues to explore new opportunities in the field, Rhensivar remains com
     padding: 0 0 0 5rem;
     margin: 0;
     color: #aaa;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     font-family: "Poppins", sans-serif;
     &::before {

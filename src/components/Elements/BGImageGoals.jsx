@@ -67,7 +67,7 @@ const ParagraphHolder = styled.div`
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     span {
       font-weight: 800;
       color: #19191a;

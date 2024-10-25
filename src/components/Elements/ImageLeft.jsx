@@ -39,7 +39,7 @@ const Title = styled.div`
   display: block;
   margin: 10px 2rem;
   font-family: Helvetica, sans serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 600;
   @media (max-width: 768px) {
     font-size: 2.5rem;
@@ -68,7 +68,7 @@ const ImageHolder = styled.img`
 const RightSide = styled.div`
   padding: 2rem;
   width: 60%;
-  font-size: 1.3rem;
+
   display: inline;
   @media (max-width: 768px) {
     width: 100%;
@@ -77,11 +77,11 @@ const RightSide = styled.div`
 `;
 const ParagraphProcessor = styled.div`
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   @media (max-width: 768px) {
     p {
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
   }
 `;

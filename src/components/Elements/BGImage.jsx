@@ -12,7 +12,7 @@ export default function BGImage({ title, image, caption, filterColor }) {
             style={{
               textIndent: "2rem",
               textAlign: "center",
-              fontSize: "1.3rem",
+              fontSize: "1.1rem",
             }}
             key={index}
           >

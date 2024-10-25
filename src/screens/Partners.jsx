@@ -23,7 +23,7 @@ const Partners = () => {
       <TopNavBar />
       <Sidebar />
       <Title>
-        <h1>PARTNERS</h1>
+        <h1>OUR PARTNERS</h1>
       </Title>
       <CardHolder>
         <PartnerCard

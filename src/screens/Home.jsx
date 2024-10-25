@@ -2,13 +2,18 @@ import React from "react";
 import styled from "styled-components";
 import TopNavBar from "../components/Nav/TopNavBar";
 import SideBar from "../components/Nav/Sidebar";
+import HomeHeader from "../components/Elements/HomeHeader";
+import Footer from "../components/Nav/Footer";
 
 export default function Home() {
   return (
     <Wrapper id="contact">
       <TopNavBar />
       <SideBar />
-      <Title>HOME PAGE</Title>
+
+      <HomeHeader />
+
+      <Footer />
     </Wrapper>
   );
 }

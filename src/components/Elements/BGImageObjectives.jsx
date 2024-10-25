@@ -68,7 +68,7 @@ const ParagraphHolder = styled.div`
     padding-right: 2rem;
   }
   p {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 `;
 const Filter = styled.div``;
