@@ -15,7 +15,7 @@ export default function ServiceCard({ image, title, bullets }) {
       <BulletContainer>
         {bullets
           ? bullets.map((item, index) => (
-              <div style={{ margin: "10px 0" }} key={index}>
+              <div style={{ margin: "0" }} key={index}>
                 <p className="font20 extraBold">{item.name}</p>
               </div>
             ))
@@ -51,12 +51,12 @@ const BulletContainer = styled.div`
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0 0 20px 0;
+  padding: 0;
   p {
     padding: 0 0 0 5rem;
     margin: 0;
     font-size: 1.2rem;
-    line-height: 1.5;
+    line-height: 1.2;
     font-family: "Poppins", sans-serif;
     &::before {
       content: "•";

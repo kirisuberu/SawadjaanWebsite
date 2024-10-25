@@ -191,13 +191,14 @@ const ServiceBottom = styled.div`
   width: 100vw;
   padding: 3rem;
   display: block;
+  margin-top: 5rem;
   background-color: #19191a;
   justify-content: left;
   align-items: left;
   h2 {
     color: white;
     font-family: "Poppins", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.5;
     text-align: left;
@@ -207,7 +208,7 @@ const ServiceBottom = styled.div`
     padding: 0 0 0 5rem;
     margin: 0;
     color: #aaa;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     font-family: "Poppins", sans-serif;
     &::before {
