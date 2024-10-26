@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import mainLogo from "../../assets/img/company/mainLogoOnly.png";
 import companyName from "../../assets/img/company/mainNameOnly.png";
 export default function TopNavBar() {
@@ -13,23 +13,23 @@ export default function TopNavBar() {
         </Link>
       </Logo>
       <NavLinks className="oswaldDB">
-        <NavLink>
-          <Link to="/about">ABOUT US</Link>
+        <NavLink activeClassName="active" to="/about">
+          ABOUT US
         </NavLink>
-        <NavLink>
-          <Link to="/team">OUR TEAM</Link>
+        <NavLink activeClassName="active" to="/team">
+          OUR TEAM
         </NavLink>
-        <NavLink>
-          <Link to="/works">OUR WORKS</Link>
+        <NavLink activeClassName="active" to="/works">
+          OUR WORKS
         </NavLink>
-        <NavLink>
-          <Link to="/services">OUR SERVICES</Link>
+        <NavLink activeClassName="active" to="/services">
+          OUR SERVICES
         </NavLink>
-        <NavLink>
-          <Link to="/partners">OUR PARTNERS</Link>
+        <NavLink activeClassName="active" to="/partners">
+          OUR PARTNERS
         </NavLink>
-        <NavLink>
-          <Link to="/contact">CONTACT US</Link>
+        <NavLink activeClassName="active" to="/contact">
+          CONTACT US
         </NavLink>
       </NavLinks>
     </NavContainer>
@@ -51,10 +51,7 @@ const NavContainer = styled.nav`
   z-index: 100;
   box-shadow: 0 0 10px #000;
 `;
-const NavLink = styled.li`
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-`;
+
 const Logo = styled.div`
   margin-right: 20px;
 `;
@@ -64,20 +61,17 @@ const NavLinks = styled.ul`
   margin: 0 2rem 0 0;
   padding: 0;
   display: flex;
-
-  li {
-    margin-right: 30px;
-    position: relative;
+  gap: 1.5rem;
+  .active {
+    color: white;
+    background-color: #333;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem; /* Change this to your desired color */
   }
-  a {
+  :not(.active) {
     color: #111;
-    text-decoration: none;
-    transition: color 0.2s ease;
+    padding: 0.5rem 0.8rem;
   }
-  &:hover {
-    color: #00674f;
-  }
-
   @media (max-width: 1220px) {
     transform: translateX(200%);
     transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
