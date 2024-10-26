@@ -85,7 +85,7 @@ const WorksSlider2 = ({
       url: img20,
     },
   ],
-  autoScrollInterval = 5000,
+  autoScrollInterval = 2000,
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -207,7 +207,7 @@ const Slide = styled.div`
 const SlideImage = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 `;
 
 const TextOverlay = styled.div`
@@ -215,7 +215,7 @@ const TextOverlay = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
   padding: 1rem;
 `;
@@ -256,10 +256,11 @@ const DotsContainer = styled.div`
 `;
 
 const Dot = styled.button`
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 1rem;
+  height: 0.75rem;
+  font-size: 1px;
   border-radius: 9999px;
   background-color: ${(props) =>
-    props.$active ? "white" : "rgba(255, 255, 255, 0.5)"};
+    props.$active ? "white" : "rgba(255, 255, 255, 0.15)"};
   transition: background-color 200ms;
 `;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import { motion } from "framer-motion";
 import TopNavBar from "../components/Nav/TopNavBar";
 import Sidebar from "../components/Nav/Sidebar";
 import Footer from "../components/Nav/Footer";
@@ -15,12 +15,14 @@ const Works = () => {
         <h1>WORKS</h1>
       </Title>
       <MainContent>
-        <ContentTitle>
+        <ContentTitle whileHover={{ letterSpacing: "3px" }}>
           <h1>Design Projects</h1>
         </ContentTitle>
         <WorksSlider1 />
-        <ContentTitle>
-          <h1>Design Projects by Jeraldine</h1>
+        <ContentTitle whileHover={{ letterSpacing: "3px" }}>
+          <h1>
+            Design Projects <span>by Arch. Jeraldine Jimenez</span>
+          </h1>
         </ContentTitle>
         <WorksSlider2 />
       </MainContent>
@@ -38,7 +40,7 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const Title = styled.div`
+const Title = styled(motion.div)`
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.5rem;
   color: #19191a;
@@ -67,7 +69,7 @@ const MainContent = styled.div`
     display: block;
   }
 `;
-const ContentTitle = styled.div`
+const ContentTitle = styled(motion.div)`
   width: 100%;
   margin: 1rem 0;
   margin-top: 5rem;
@@ -81,6 +83,11 @@ const ContentTitle = styled.div`
   font-size: 0.7rem;
   h1 {
     font-weight: 500 !important;
+  }
+  span {
+    font-weight: 400 !important;
+    font-size: 1.5rem;
+    color: #bbb;
   }
   @media screen and (max-width: 768px) {
     font-size: 0.8rem;

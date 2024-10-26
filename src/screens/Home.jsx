@@ -10,9 +10,7 @@ export default function Home() {
     <Wrapper id="contact">
       <TopNavBar />
       <SideBar />
-
       <HomeHeader />
-
       <Footer />
     </Wrapper>
   );

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import TopNavBar from "../components/Nav/TopNavBar";
 import SideBar from "../components/Nav/Sidebar";
 import ContactForm from "../components/Elements/ContactForm";
+import Footer from "../components/Nav/Footer";
 export default function Contact() {
   return (
     <Wrapper id="contact">
@@ -12,6 +13,7 @@ export default function Contact() {
       <TopNavBar />
       <SideBar />
       <ContactForm />
+      <Footer />
     </Wrapper>
   );
 }
