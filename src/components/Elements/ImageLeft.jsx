@@ -6,7 +6,7 @@ export default function ImageLeft({ title, image, imgAlt, caption, bgColor }) {
   const MultiParagraphProcessor = ({ caption }) => {
     const paragraphs = caption.split("\n"); // split the caption into an array of paragraphs
     return (
-      <ParagraphProcessor style={{ margin: "2rem" }}>
+      <ParagraphProcessor style={{ padding: "2rem" }}>
         {paragraphs.map((paragraph, index) => (
           <p style={{ textIndent: "2rem", textAlign: "justify" }} key={index}>
             {paragraph}
@@ -46,6 +46,7 @@ const Title = styled.div`
   }
 `;
 const MainContent = styled.div`
+  width: 100%;
   display: flex;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -53,7 +54,7 @@ const MainContent = styled.div`
 `;
 const LeftSide = styled.div`
   padding: 2rem;
-  width: 40%;
+  width: 45%;
   display: inline;
   min-height: 600px;
   @media (max-width: 768px) {

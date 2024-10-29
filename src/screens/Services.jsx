@@ -19,9 +19,13 @@ export default function Services() {
           </Title>
           <ServiceIntro>
             <h2>
-              At Abdurauf Sawadjaan Engineering Consultancy, we offer a
-              comprehensive range of services that span various engineering and
-              design disciplines. Here’s how our team can elevate your projects:
+              At{" "}
+              <span style={{ fontWeight: "bold" }}>
+                Abdurauf Sawadjaan Engineering Consultancy
+              </span>
+              , we offer a comprehensive range of services that span various
+              engineering and design disciplines. Here’s how our team can
+              elevate your projects:
             </h2>
           </ServiceIntro>
           <ServiceCard

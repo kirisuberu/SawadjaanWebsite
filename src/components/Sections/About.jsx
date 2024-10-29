@@ -68,10 +68,10 @@ As we continue to grow, our company remains grounded in humility and service. Ev
   );
 }
 const Wrapper = styled.div`
-  width: 100%;
+  width: 100vw;
 `;
 const VMGO = styled.div`
-  width: 100vw;
+  width: 100%;
   display: inline-flex;
   gap: 25px;
   @media (max-width: 768px) {

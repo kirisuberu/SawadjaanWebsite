@@ -6,6 +6,9 @@ import Sidebar from "../components/Nav/Sidebar";
 import Footer from "../components/Nav/Footer";
 import WorksSlider1 from "../components/Elements/WorksSlider1";
 import WorksSlider2 from "../components/Elements/WorksSlider2";
+import WorksSlider3 from "../components/Elements/WorksSlider3";
+import WorksSlider4 from "../components/Elements/WorksSlider4";
+import WorksSlider5 from "../components/Elements/WorksSlider5";
 const Works = () => {
   return (
     <>
@@ -26,6 +29,18 @@ const Works = () => {
             </h1>
           </ContentTitle>
           <WorksSlider2 />
+          <ContentTitle whileHover={{ letterSpacing: "3px" }}>
+            <h1>Structural Projects</h1>
+          </ContentTitle>
+          <WorksSlider3 />
+          <ContentTitle whileHover={{ letterSpacing: "3px" }}>
+            <h1>Geodetic Services</h1>
+          </ContentTitle>
+          <WorksSlider4 />
+          <ContentTitle whileHover={{ letterSpacing: "3px" }}>
+            <h1>Electronic Services</h1>
+          </ContentTitle>
+          <WorksSlider5 />
         </MainContent>
       </Wrapper>
       <Footer />
