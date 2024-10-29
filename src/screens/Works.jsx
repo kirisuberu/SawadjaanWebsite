@@ -8,26 +8,28 @@ import WorksSlider1 from "../components/Elements/WorksSlider1";
 import WorksSlider2 from "../components/Elements/WorksSlider2";
 const Works = () => {
   return (
-    <Wrapper>
-      <TopNavBar />
-      <Sidebar />
-      <Title>
-        <h1>WORKS</h1>
-      </Title>
-      <MainContent>
-        <ContentTitle whileHover={{ letterSpacing: "3px" }}>
-          <h1>Design Projects</h1>
-        </ContentTitle>
-        <WorksSlider1 />
-        <ContentTitle whileHover={{ letterSpacing: "3px" }}>
-          <h1>
-            Design Projects <span>by Arch. Jeraldine Jimenez</span>
-          </h1>
-        </ContentTitle>
-        <WorksSlider2 />
-      </MainContent>
+    <>
+      <Wrapper>
+        <TopNavBar />
+        <Sidebar />
+        <Title>
+          <h1>WORKS</h1>
+        </Title>
+        <MainContent>
+          <ContentTitle whileHover={{ letterSpacing: "3px" }}>
+            <h1>Design Projects</h1>
+          </ContentTitle>
+          <WorksSlider1 />
+          <ContentTitle whileHover={{ letterSpacing: "3px" }}>
+            <h1>
+              Design Projects <span>by Arch. Jeraldine Jimenez</span>
+            </h1>
+          </ContentTitle>
+          <WorksSlider2 />
+        </MainContent>
+      </Wrapper>
       <Footer />
-    </Wrapper>
+    </>
   );
 };
 

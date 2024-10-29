@@ -62,6 +62,7 @@ const NavLinks = styled.ul`
   padding: 0;
   display: flex;
   gap: 1.5rem;
+
   .active {
     color: white;
     background-color: #333;

@@ -4,7 +4,7 @@ const styles = {
   card: {
     position: "relative",
     margin: "1rem",
-    width: "20rem",
+    width: "18rem",
     backgroundColor: "white",
     borderRadius: "0.5rem",
     boxShadow:

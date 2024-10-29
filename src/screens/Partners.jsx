@@ -19,66 +19,68 @@ import Footer from "../components/Nav/Footer";
 
 const Partners = () => {
   return (
-    <Wrapper>
-      <TopNavBar />
-      <Sidebar />
-      <Title>
-        <h1>OUR PARTNERS</h1>
-      </Title>
-      <CardHolder>
-        <PartnerCard
-          companyLogo={partner1}
-          companyName={"A Hashim Construction"}
-          cardWidth={350}
-        />
-        <PartnerCard
-          companyLogo={partner2}
-          companyName={"Amara International Institute of Technology, Inc."}
-          cardWidth={200}
-        />
-        <PartnerCard
-          companyLogo={partner3}
-          companyName={"Edifice Engineering"}
-          cardWidth={200}
-        />
-        <PartnerCard
-          companyLogo={partner4}
-          companyName={"Hardbloc Development Corporation"}
-          cardWidth={250}
-        />
-        <PartnerCard
-          companyLogo={partner5}
-          companyName={"Ja Architectural Studio"}
-          cardWidth={200}
-        />
-        <PartnerCard
-          companyLogo={partner6}
-          companyName={"MH Construction & Enterprises"}
-          cardWidth={200}
-        />
-        <PartnerCard
-          companyLogo={partner7}
-          companyName={"MMK Construction and Enterprises"}
-          cardWidth={200}
-        />
-        <PartnerCard
-          companyLogo={partner8}
-          companyName={"S Three Print and Apparel"}
-          cardWidth={200}
-        />
-        <PartnerCard
-          companyLogo={partner9}
-          companyName={"SHIEHAM CONSTRUCTION AND ENTERPRISES"}
-          cardWidth={200}
-        />
-        <PartnerCard
-          companyLogo={partner10}
-          companyName={"ZLY CONSTRUCTION"}
-          cardWidth={200}
-        />
-      </CardHolder>
+    <>
+      <Wrapper>
+        <TopNavBar />
+        <Sidebar />
+        <Title>
+          <h1>OUR PARTNERS</h1>
+        </Title>
+        <CardHolder>
+          <PartnerCard
+            companyLogo={partner1}
+            companyName={"A Hashim Construction"}
+            cardWidth={350}
+          />
+          <PartnerCard
+            companyLogo={partner2}
+            companyName={"Amara International Institute of Technology, Inc."}
+            cardWidth={200}
+          />
+          <PartnerCard
+            companyLogo={partner3}
+            companyName={"Edifice Engineering"}
+            cardWidth={200}
+          />
+          <PartnerCard
+            companyLogo={partner4}
+            companyName={"Hardbloc Development Corporation"}
+            cardWidth={250}
+          />
+          <PartnerCard
+            companyLogo={partner5}
+            companyName={"Ja Architectural Studio"}
+            cardWidth={200}
+          />
+          <PartnerCard
+            companyLogo={partner6}
+            companyName={"MH Construction & Enterprises"}
+            cardWidth={200}
+          />
+          <PartnerCard
+            companyLogo={partner7}
+            companyName={"MMK Construction and Enterprises"}
+            cardWidth={200}
+          />
+          <PartnerCard
+            companyLogo={partner8}
+            companyName={"S Three Print and Apparel"}
+            cardWidth={200}
+          />
+          <PartnerCard
+            companyLogo={partner9}
+            companyName={"SHIEHAM CONSTRUCTION AND ENTERPRISES"}
+            cardWidth={200}
+          />
+          <PartnerCard
+            companyLogo={partner10}
+            companyName={"ZLY CONSTRUCTION"}
+            cardWidth={200}
+          />
+        </CardHolder>
+      </Wrapper>
       <Footer />
-    </Wrapper>
+    </>
   );
 };
 
