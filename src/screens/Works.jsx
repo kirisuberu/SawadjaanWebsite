@@ -55,6 +55,8 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  align-content: center;
 `;
 
 const Title = styled(motion.div)`
@@ -71,7 +73,7 @@ const Title = styled(motion.div)`
   @media screen and (max-width: 768px) {
     font-size: 1rem;
     letter-spacing: 0.3rem;
-    margin-top: 1rem;
+    margin-top: 60px;
     padding-top: 1rem;
   }
 `;
@@ -83,7 +85,7 @@ const MainContent = styled.div`
   flex-direction: column;
   font-family: "Poppins", sans-serif;
   @media screen and (max-width: 768px) {
-    display: block;
+    display: flex;
   }
 `;
 const ContentTitle = styled(motion.div)`
@@ -110,5 +112,9 @@ const ContentTitle = styled(motion.div)`
     font-size: 0.8rem;
     letter-spacing: 0.3rem;
     padding: 1rem;
+    margin: 1rem 0;
+    h1 {
+      font-size: 1.5rem;
+    }
   }
 `;

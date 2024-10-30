@@ -80,10 +80,10 @@ const VMGO = styled.div`
 `;
 const HomeContent = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  margin-top: 60px;
 `;
 const MainContent = styled.div`
-  margin-top: 60px;
   width: 100vw;
 `;
 const Title = styled.div`

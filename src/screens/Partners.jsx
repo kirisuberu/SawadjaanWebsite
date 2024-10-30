@@ -107,7 +107,7 @@ const Title = styled.div`
   @media screen and (max-width: 768px) {
     font-size: 1rem;
     letter-spacing: 0.3rem;
-    margin-top: 1rem;
+    margin-top: 60px;
     padding-top: 1rem;
   }
 `;

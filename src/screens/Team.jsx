@@ -192,7 +192,7 @@ const SuperTeam = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 1rem;
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
@@ -206,8 +206,9 @@ const LineDiv = styled.div`
 `;
 
 const MainContent = styled.div`
-  margin: 0 40px;
+  margin: 60px 40px 0;
+
   @media screen and (max-width: 768px) {
-    margin: 0;
+    margin: 60px 0 0;
   }
 `;

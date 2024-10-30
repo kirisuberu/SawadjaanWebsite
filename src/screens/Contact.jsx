@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import TopNavBar from "../components/Nav/TopNavBar";
 import SideBar from "../components/Nav/Sidebar";
 import ContactForm from "../components/Elements/ContactForm";
 import Footer from "../components/Nav/Footer";
+import MapBulacan from "../components/Elements/MapBulacan";
 export default function Contact() {
   return (
     <Wrapper id="contact">
@@ -13,6 +15,12 @@ export default function Contact() {
       <TopNavBar />
       <SideBar />
       <ContactForm />
+      <Offices>
+        <TitleHolder whileHover={{ letterSpacing: "3px" }}>
+          <h1>OFFICES</h1>
+        </TitleHolder>
+        <MapBulacan />
+      </Offices>
       <Footer />
     </Wrapper>
   );
@@ -36,7 +44,43 @@ const Title = styled.div`
   @media screen and (max-width: 768px) {
     font-size: 1rem;
     letter-spacing: 0.3rem;
-    margin-top: 1rem;
+    margin-top: 60px;
     padding-top: 1rem;
+  }
+`;
+
+const Offices = styled.div`
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  @media screen and (max-width: 768px) {
+    margin-top: 1rem;
+  }
+`;
+const TitleHolder = styled(motion.div)`
+  width: 100vw;
+  margin-top: 3rem;
+  margin-left: -5rem;
+  background-color: #19191a;
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  h1 {
+    padding: 0 0 0 5rem;
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+    margin-left: -1.3rem;
+    h1 {
+      padding: 1rem 1rem 1rem 2rem;
+      font-size: 1.5rem;
+    }
   }
 `;

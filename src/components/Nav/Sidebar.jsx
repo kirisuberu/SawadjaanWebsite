@@ -19,7 +19,7 @@ const Sidebar = () => {
         <CloseButton onClick={toggleSidebar}>Close</CloseButton>
         <NavLinks>
           <NavLink>
-            <Link to="/">ABOUT US</Link>
+            <Link to="/about">ABOUT US</Link>
           </NavLink>
           <NavLink>
             <Link to="/team">OUR TEAM</Link>
@@ -124,6 +124,7 @@ const NavLink = styled.div`
     transition: color 0.2s ease;
   }
   a:hover {
-    color: #efbf04;
+    color: white;
+    background-color: #19191a;
   }
 `;
