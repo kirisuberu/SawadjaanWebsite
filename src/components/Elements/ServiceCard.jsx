@@ -29,7 +29,10 @@ export default function ServiceCard({ image, title, bullets }) {
       whileInView={"visible"}
       viewport={{ once: true }}
     >
-      <TitleHolder variants={itemVariants}>
+      <TitleHolder
+        variants={itemVariants}
+        whileHover={{ letterSpacing: "3px" }}
+      >
         <h1>{title}</h1>
       </TitleHolder>
       <BulletContainer>

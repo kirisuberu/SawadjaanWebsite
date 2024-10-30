@@ -647,7 +647,7 @@ Error generating stack: `+o.message+`
   border-top: 2px solid #888;
   text-align: center;
   font-size: 0.875rem;
-`;function eE(){return h.jsxs(tE,{children:[h.jsx(Ir,{}),h.jsx(zr,{}),h.jsxs(nE,{children:[h.jsxs(rE,{children:[h.jsx(iE,{children:h.jsx("h1",{children:"ABOUT US"})}),h.jsx(Mk,{}),h.jsx(dk,{title:"Our Story",image:to,imgAlt:"Our Story",caption:`Abdurauf Sawadjaan Engineering Consultancy was founded with a clear purpose: to contribute to the betterment of communities through thoughtful, resilient, and enduring infrastructure. Our founder, Abdurauf I. Sawadjaan, has always believed in the importance of stewardship and responsibility toward the environment. This guiding principle instilled in him the desire to build—both physically and socially—for the benefit of all, shaping his path toward becoming a civil engineer.
+`;function eE(){return h.jsxs(tE,{children:[h.jsx(Ir,{}),h.jsx(zr,{}),h.jsxs(nE,{children:[h.jsx(iE,{children:h.jsx("h1",{children:"ABOUT US"})}),h.jsxs(rE,{children:[h.jsx(Mk,{}),h.jsx(dk,{title:"Our Story",image:to,imgAlt:"Our Story",caption:`Abdurauf Sawadjaan Engineering Consultancy was founded with a clear purpose: to contribute to the betterment of communities through thoughtful, resilient, and enduring infrastructure. Our founder, Abdurauf I. Sawadjaan, has always believed in the importance of stewardship and responsibility toward the environment. This guiding principle instilled in him the desire to build—both physically and socially—for the benefit of all, shaping his path toward becoming a civil engineer.
 After earning his Bachelor of Science in Civil Engineering from Western Mindanao State University, Abdurauf’s thirst for knowledge led him to pursue a master’s degree at the prestigious Polytechnic University of the Philippines. During this journey, he was greatly influenced by Engr. June-June Santos, a mentor and expert in structural engineering who became a source of inspiration and a partner in the industry.
 Although Abdurauf ventured into various businesses, his heart remained in structural engineering. His passion for the field, combined with the guidance and mentorship of Engr. Santos, brought him back to the profession where he truly felt at home. With a vision to create a lasting legacy, he focused on building structures that reflect technical excellence and a commitment to serving communities.
 Starting his own consultancy was not without challenges. Limited capital posed a significant hurdle, but Abdurauf recognized that real wealth lies in the knowledge, experience, and skills he had acquired over the years. With that understanding, he founded Abdurauf Sawadjaan Engineering Consultancy, a company built on perseverance and a commitment to quality.
@@ -684,7 +684,7 @@ As we continue to grow, our company remains grounded in humility and service. Ev
     margin-top: 1rem;
     padding-top: 1rem;
   }
-`;function oE(){return console.log("Landing component is being rendered!"),h.jsx(h.Fragment,{children:h.jsx(eE,{})})}function sE(){return h.jsx(aE,{children:h.jsxs(lE,{name:"contact-form",id:"contact-form",children:[h.jsx(uu,{type:"text",name:"FName",id:"Fname",placeholder:"First Name"}),h.jsx(uu,{type:"text",name:"LName",id:"Lname",placeholder:"Last Name"}),h.jsx(uu,{type:"email",name:"Email",id:"Email",placeholder:"name@domain.com"}),h.jsx(uE,{type:"textarea",name:"Message",id:"Message",placeholder:"Message"}),h.jsx(cE,{type:"submit",value:"Send"})]})})}const aE=k.div`
+`;function oE(){return console.log("Landing component is being rendered!"),h.jsx(h.Fragment,{children:h.jsx(eE,{})})}function sE(){return h.jsx(aE,{children:h.jsxs(lE,{name:"contact-form",id:"contact-form",children:[h.jsx("label",{htmlFor:"Fname",children:"First Name"}),h.jsx(uu,{type:"text",name:"FName",id:"Fname",placeholder:"First Name"}),h.jsx("label",{htmlFor:"Lname",children:"Last Name"}),h.jsx(uu,{type:"text",name:"LName",id:"Lname",placeholder:"Last Name"}),h.jsx("label",{htmlFor:"Email",children:"Email"}),h.jsx(uu,{type:"email",name:"Email",id:"Email",placeholder:"name@domain.com"}),h.jsx("label",{htmlFor:"Message",children:"Message"}),h.jsx(uE,{type:"textarea",name:"Message",id:"Message",placeholder:"Message"}),h.jsx(cE,{type:"submit",value:"Send"})]})})}const aE=k.div`
   background-color: #eee;
   width: 100%;
   display: flex;
@@ -699,6 +699,11 @@ As we continue to grow, our company remains grounded in humility and service. Ev
   border-radius: 1rem;
   input {
     border-radius: 1rem;
+  }
+  label {
+    color: #19191a;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
   }
   -webkit-box-shadow: 1px 0px 21px 0px #19191a;
   box-shadow: 1px 0px 21px 0px #19191a;
@@ -894,7 +899,7 @@ As he continues to explore new opportunities in the field, Rhensivar remains com
   @media screen and (max-width: 768px) {
     margin: 0;
   }
-`;function ro({image:e,title:t,bullets:n}){const r={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.15}}},i={hidden:{opacity:0,y:20},visible:{opacity:1,y:0}},o={hidden:{opacity:0,x:20},visible:{opacity:1,x:0}};return h.jsxs(iL,{variants:r,initial:"hidden",whileInView:"visible",viewport:{once:!0},children:[h.jsx(sL,{variants:i,children:h.jsx("h1",{children:t})}),h.jsx(oL,{children:n?n.map((s,a)=>h.jsx(Wt.div,{style:{margin:"0"},variants:o,viewport:{once:!0,amount:.5},children:h.jsx("p",{className:"font20 extraBold",children:s.name})},a)):null})]})}const iL=k(Wt.div)`
+`;function ro({image:e,title:t,bullets:n}){const r={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.15}}},i={hidden:{opacity:0,y:20},visible:{opacity:1,y:0}},o={hidden:{opacity:0,x:20},visible:{opacity:1,x:0}};return h.jsxs(iL,{variants:r,initial:"hidden",whileInView:"visible",viewport:{once:!0},children:[h.jsx(sL,{variants:i,whileHover:{letterSpacing:"3px"},children:h.jsx("h1",{children:t})}),h.jsx(oL,{children:n?n.map((s,a)=>h.jsx(Wt.div,{style:{margin:"0"},variants:o,viewport:{once:!0,amount:.5},children:h.jsx("p",{className:"font20 extraBold",children:s.name})},a)):null})]})}const iL=k(Wt.div)`
   width: 90vw;
   background-image: url(${e=>e.image});
   background-size: cover;

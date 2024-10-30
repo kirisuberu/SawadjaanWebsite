@@ -4,24 +4,28 @@ export default function ContactForm() {
   return (
     <Wrapper>
       <Form name="contact-form" id="contact-form">
+        <label htmlFor="Fname">First Name</label>
         <TextInput
           type="text"
           name="FName"
           id="Fname"
           placeholder="First Name"
         />
+        <label htmlFor="Lname">Last Name</label>
         <TextInput
           type="text"
           name="LName"
           id="Lname"
           placeholder="Last Name"
         />
+        <label htmlFor="Email">Email</label>
         <TextInput
           type="email"
           name="Email"
           id="Email"
           placeholder="name@domain.com"
         />
+        <label htmlFor="Message">Message</label>
         <TextAreaInput
           type="textarea"
           name="Message"
@@ -49,6 +53,11 @@ const Form = styled.form`
   border-radius: 1rem;
   input {
     border-radius: 1rem;
+  }
+  label {
+    color: #19191a;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
   }
   -webkit-box-shadow: 1px 0px 21px 0px #19191a;
   box-shadow: 1px 0px 21px 0px #19191a;

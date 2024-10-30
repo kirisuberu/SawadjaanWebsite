@@ -27,10 +27,10 @@ As we continue to grow, our company remains grounded in humility and service. Ev
       <TopNavBar />
       <Sidebar />
       <HomeContent>
+        <Title>
+          <h1>ABOUT US</h1>
+        </Title>
         <MainContent>
-          <Title>
-            <h1>ABOUT US</h1>
-          </Title>
           <ImageSlider />
           <ImageLeft
             title="Our Story"
