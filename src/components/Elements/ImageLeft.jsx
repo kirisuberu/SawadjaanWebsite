@@ -57,8 +57,11 @@ const LeftSide = styled.div`
   width: 45%;
   display: inline;
   min-height: 600px;
+  overflow: hidden;
   @media (max-width: 768px) {
     width: 100%;
+
+    min-height: 300px;
     padding: 1rem;
   }
 `;

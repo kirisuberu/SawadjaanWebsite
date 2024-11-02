@@ -8,7 +8,7 @@ import BGImage from "../Elements/BGImage";
 import BGImageGoals from "../Elements/BGImageGoals";
 import BGImageObjectives from "../Elements/BGImageObjectives";
 //assets
-import HomeBG from "../../assets/img/sampleBG.jpg";
+import HomeBG from "../../assets/img/company/COVER.png";
 import ImageSlider from "../Elements/ImageSlider2";
 import Footer from "../Nav/Footer";
 export default function About() {
