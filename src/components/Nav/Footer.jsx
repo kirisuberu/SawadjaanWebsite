@@ -59,15 +59,6 @@ const Footer = () => {
               <SocialLink href="https://www.facebook.com/ASEConsultancy2024">
                 <Facebook size={24} />
               </SocialLink>
-              <SocialLink href="#">
-                <Twitter size={24} />
-              </SocialLink>
-              <SocialLink href="#">
-                <Instagram size={24} />
-              </SocialLink>
-              <SocialLink href="#">
-                <Linkedin size={24} />
-              </SocialLink>
             </SocialLinks>
           </Column>
         </GridContainer>

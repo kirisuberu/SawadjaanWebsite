@@ -9,7 +9,7 @@ import BGImageGoals from "../Elements/BGImageGoals";
 import BGImageObjectives from "../Elements/BGImageObjectives";
 //assets
 import HomeBG from "../../assets/img/sampleBG.jpg";
-import ImageSlider from "../Elements/ImageSlider";
+import ImageSlider from "../Elements/ImageSlider2";
 import Footer from "../Nav/Footer";
 export default function About() {
   const StoryContent = `Abdurauf Sawadjaan Engineering Consultancy was founded with a clear purpose: to contribute to the betterment of communities through thoughtful, resilient, and enduring infrastructure. Our founder, Abdurauf I. Sawadjaan, has always believed in the importance of stewardship and responsibility toward the environment. This guiding principle instilled in him the desire to build—both physically and socially—for the benefit of all, shaping his path toward becoming a civil engineer.
