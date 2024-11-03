@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import TopNavBar from "../components/Nav/TopNavBar";
@@ -10,6 +10,9 @@ import WorksSlider3 from "../components/Elements/WorksSlider3";
 import WorksSlider4 from "../components/Elements/WorksSlider4";
 import WorksSlider5 from "../components/Elements/WorksSlider5";
 const Works = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Wrapper>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 
 import TopNavBar from "../components/Nav/TopNavBar";
@@ -18,6 +18,9 @@ import partner10 from "../assets/img/partners/partner10.png";
 import Footer from "../components/Nav/Footer";
 
 const Partners = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Wrapper>

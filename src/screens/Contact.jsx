@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import TopNavBar from "../components/Nav/TopNavBar";
 import SideBar from "../components/Nav/Sidebar";
@@ -8,6 +9,9 @@ import Footer from "../components/Nav/Footer";
 import MapBulacan from "../components/Elements/MapBulacan";
 import MapZC from "../components/Elements/MapZC";
 export default function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Wrapper id="contact">
       <Title>
