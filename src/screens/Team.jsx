@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import TopNavBar from "../components/Nav/TopNavBar";
 import SideBar from "../components/Nav/Sidebar";
@@ -19,6 +19,10 @@ import MarkJeremyRaga from "./../assets/img/team/MarkJeremyRaga.png";
 import Rhensivar from "./../assets/img/team/RhensivarSappayani.png";
 import Footer from "../components/Nav/Footer";
 export default function Team() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const abduraufcaption = `Abdurauf I. Sawadjaan holds a Master’s Degree in Civil Engineering, specializing in Structural Engineering, from the Polytechnic University of the Philippines in Sta. Mesa, Manila. As a Licensed Master Plumber, Safety Officer 2, and DPWH Accredited Materials Engineer I, he brings a well-rounded set of skills to every project.
 With a focus on delivering sustainable, efficient, and structurally sound solutions, Abdurauf ensures that every phase of a project— from concept and design to construction and completion—is managed with precision. Combining advanced design tools and strict adherence to engineering standards, his consultancy provides clients with dependable results that prioritize safety and quality.
 Committed to building long-term partnerships, Abdurauf works closely with clients to deliver projects that not only meet expectations but also stand the test of time.

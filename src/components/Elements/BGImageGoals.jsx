@@ -5,11 +5,7 @@ export default function BGImageGoals({ title, image, filterColor }) {
   console.log("BGImage component is being rendered");
 
   return (
-    <Wrapper
-      image={image}
-      filterColor={filterColor}
-      style={{ backgroundImage: `url(${image})`, backgroundSize: "cover" }}
-    >
+    <Wrapper image={image} filterColor={filterColor}>
       {" "}
       {/* filter */}
       <MainContent>
@@ -41,7 +37,7 @@ const Wrapper = styled.div`
   margin: 15px 0;
   min-height: 300px;
   position: relative;
-  background-image: ${(props) => `url(${props.image})`};
+  //background-image: ${(props) => `url(${props.image})`};
   background-size: cover;
   &::after {
     content: "";

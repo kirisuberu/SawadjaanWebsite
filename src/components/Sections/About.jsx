@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useEffect } from "react";
 
 import TopNavBar from "../Nav/TopNavBar";
 import Sidebar from "../Nav/Sidebar";
@@ -8,10 +9,14 @@ import BGImage from "../Elements/BGImage";
 import BGImageGoals from "../Elements/BGImageGoals";
 import BGImageObjectives from "../Elements/BGImageObjectives";
 //assets
-import HomeBG from "../../assets/img/sampleBG.jpg";
-import ImageSlider from "../Elements/ImageSlider";
+import HomeBG from "../../assets/img/company/COVER.png";
+import ImageSlider from "../Elements/ImageSlider2";
 import Footer from "../Nav/Footer";
 export default function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const StoryContent = `Abdurauf Sawadjaan Engineering Consultancy was founded with a clear purpose: to contribute to the betterment of communities through thoughtful, resilient, and enduring infrastructure. Our founder, Abdurauf I. Sawadjaan, has always believed in the importance of stewardship and responsibility toward the environment. This guiding principle instilled in him the desire to build—both physically and socially—for the benefit of all, shaping his path toward becoming a civil engineer.
 After earning his Bachelor of Science in Civil Engineering from Western Mindanao State University, Abdurauf’s thirst for knowledge led him to pursue a master’s degree at the prestigious Polytechnic University of the Philippines. During this journey, he was greatly influenced by Engr. June-June Santos, a mentor and expert in structural engineering who became a source of inspiration and a partner in the industry.
 Although Abdurauf ventured into various businesses, his heart remained in structural engineering. His passion for the field, combined with the guidance and mentorship of Engr. Santos, brought him back to the profession where he truly felt at home. With a vision to create a lasting legacy, he focused on building structures that reflect technical excellence and a commitment to serving communities.

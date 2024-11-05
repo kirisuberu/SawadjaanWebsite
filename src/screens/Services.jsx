@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import TopNavBar from "../components/Nav/TopNavBar";
 import SideBar from "../components/Nav/Sidebar";
@@ -8,6 +8,9 @@ import imageBG from "../assets/img/company/COVER.png";
 import "../scss/index.scss";
 import Footer from "../components/Nav/Footer";
 export default function Services() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Wrapper id="services">

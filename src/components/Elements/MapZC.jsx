@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { MapPin, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import mapImage from "../../assets/img/maps/Bulacan.png";
+import mapImage from "../../assets/img/maps/ZC.png";
 
 const MapBulacan = ({
-  title = "Bulacan Office",
-  address = "Taal, Pulilan, Bulacan",
-  latitude = "14.9114243",
-  longitude = "120.8790376",
+  title = "Main Office",
+  address = "Veterans Ave, Zamboanga City",
+  latitude = "6.905009",
+  longitude = "122.080470",
 }) => {
   const handleMapRedirect = () => {
     const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;

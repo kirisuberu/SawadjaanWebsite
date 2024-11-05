@@ -1,12 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import TopNavBar from "../components/Nav/TopNavBar";
 import SideBar from "../components/Nav/Sidebar";
 import ContactForm from "../components/Elements/ContactForm";
 import Footer from "../components/Nav/Footer";
 import MapBulacan from "../components/Elements/MapBulacan";
+import MapZC from "../components/Elements/MapZC";
 export default function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Wrapper id="contact">
       <Title>
@@ -19,7 +24,10 @@ export default function Contact() {
         <TitleHolder whileHover={{ letterSpacing: "3px" }}>
           <h1>OFFICES</h1>
         </TitleHolder>
-        <MapBulacan />
+        <Maps>
+          <MapZC />
+          <MapBulacan />
+        </Maps>
       </Offices>
       <Footer />
     </Wrapper>
@@ -56,14 +64,29 @@ const Offices = styled.div`
   align-items: center;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     margin-top: 1rem;
+  }
+`;
+const Maps = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+    align-content: space-evenly;
   }
 `;
 const TitleHolder = styled(motion.div)`
   width: 100vw;
   margin-top: 3rem;
   margin-left: -5rem;
+  display: flex;
   background-color: #19191a;
   color: white;
   padding: 1rem 0;

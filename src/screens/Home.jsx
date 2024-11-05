@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import TopNavBar from "../components/Nav/TopNavBar";
 import SideBar from "../components/Nav/Sidebar";
@@ -6,6 +6,9 @@ import HomeHeader from "../components/Elements/HomeHeader";
 import Footer from "../components/Nav/Footer";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Wrapper id="contact">
       <TopNavBar />
