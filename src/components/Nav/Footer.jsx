@@ -45,7 +45,7 @@ const Footer = () => {
                 abduraufsawadjaan@gmail.com
               </ContactLink>
 
-              <ContactLink href="tel:+1234567890">
+              <ContactLink href="tel:+639356951625">
                 <Phone size={16} />
                 +63 935 695 1625
               </ContactLink>
